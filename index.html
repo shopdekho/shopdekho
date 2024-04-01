@@ -1,936 +1,990 @@
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"></meta>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
-    <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
-    <title>shopdekho.online</title>
+  <meta charset="UTF-8" />
+  <title>Your shopname | Location</title>
+  <link rel="icon" href="https://shopname.shopdekho.online/Image/Shop_dekho%20_shoes_footwear.png" type="image/x-icon">
+<link rel="shortcut icon" href="https://shopname.shopdekho.online/Image/Shop_dekho%20_shoes_footwear.png" type="image/x-icon">
+<meta name="description" content="" />
+	<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+  <link rel="icon" href="favicon.png">
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
    
- 
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   
-   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet"></link>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet"></link>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&amp;display=swap" rel="stylesheet"></link>
-  
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-  
-  
-
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet"></link>
-  
-  <!-- https://animate.style/ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'> -->
-
-<script crossorigin="anonymous" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<link href='https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css' media='screen' rel='stylesheet' type='text/css'/>
 
 
-  
- <style>
-   
-   section.newsletter.section {
-    margin: 56px;}
-   
-img.img-fluid:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
- 
-   /* Define the keyframes for the bounce animation */
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0); /* Bounce at the top position */
-  }
-  40% {
-    transform: translateY(-20px); /* Move the image upward */
-  }
-  60% {
-    transform: translateY(-10px); /* Move the image downward */
-  }
-}
-      .bouncing-image1 {
-  animation: bounce 2.5s infinite; /* 3 seconds duration, infinite loop */
-}
-  
-      .bouncing-image2 {
-  animation: bounce 2s infinite; /* 2 seconds duration, infinite loop */
-}
-</style> 
-  
-  
   <style>
-
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
-
-.faq .faq-list {
-  padding: 0 0px;
-}
-
-.faq .faq-list ul {
-  padding: 0;
-  list-style: none;
-}
-
-.faq .faq-list li+li {
-  margin-top: 15px;
-}
-
-.faq .faq-list li {
-  padding: 20px;
-  background: #efeded;
-  border-radius: 4px;
-  position: relative;
-}
-
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 30px;
-  outline: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.faq .faq-list .icon-help {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
-  color: #0643a3;
-}
-
-.faq .faq-list .icon-show,
-.faq .faq-list .icon-close {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list a.collapsed {
-  color: #36348d;
-  transition: 0.3s;
-}
-
-.faq .faq-list a.collapsed:hover {
-  color: #e82c88;
-}
-
-.faq .faq-list a.collapsed .icon-show {
-  display: inline-block;
-}
-
-.faq .faq-list a.collapsed .icon-close {
-  display: none;
-}
-
- img.img-fluid {
-    max-width: 100%;
-    height: 11em;
-}  
-    
-@media (max-width: 1200px) {
-  .faq .faq-list {
-    padding: 0;
-  }
-}
-    
-
-h3.heading {
-    margin-top: -11px;
-    margin-bottom: -26px;
-    color: #1f1e20;
-}
-    .mb-4 {
-    margin-bottom: 1.1rem!important;
-    color: #928cb1;
-}
-    .site-footer {
-    position: relative;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0px;
-    margin-top: 126px;
-}
-    
-
-.col-md-6 {
-  
-    z-index: 0;
-    }
-   
-    
-    
-img.img-fluid1 {
-    max-width: 100%;
-    height: 11em;
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    box-shadow: 0 16px 48px #E3E7EB;
-    mix-blend-mode: multiply;
-    margin-top: 10px;
-    margin-left: 269px;
-}    
-    
-.img-fluid2 {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    box-shadow: 1px -1px 15px 7px #E3E7EB;
-    mix-blend-mode: multiply;
-    margin-top: 200px;
-    margin-left: 195px;
-}
-img.img-fluid5 {
-    max-width: 100%;
-    height: 19em;
-}
- 
-
-@media (max-width: 440px){
-img.img-fluid1 {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 1px -1px 15px 7px #E3E7EB;
-    mix-blend-mode: multiply;
-    margin-top: 414px;
-    margin-left: 183px;}
-  
-.img-fluid2 {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 1px -1px 15px 7px #E3E7EB;
-    mix-blend-mode: multiply;
-    margin-top: 498px;
-    margin-left: 127px;}
-  
-}
- 
-  
-</style>  
-  
-  
-  
-  <style>
-          
-      h1.hero-title.h2-mobile.mt-0.is-revealing {
-    font-weight: 300;
-    font-family: 'Cabin Sketch', sans-serif;
-    font-size: 36px;
-         /*color: #267d87;
-   color: #8d70e3;*/
-        color: #A020F0;
-    text-shadow: -1px 2px 5px #3f3c3c;
-}
-    
-   
-    
-    b.button-primaryy {
-    background: linear-gradient(65deg, #1274ED 0, #4992F0 100%);
-    display: inline-flex;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    line-height: 16px;
-    text-transform: uppercase;
-    text-decoration: none !important;
-    color: #ffffff !important;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    justify-content: center;
-    padding: 16px 23px;
-    height: 48px;
-    text-align: center;
+  .ad-info {
+    background-color: aliceblue;
+    border-radius: 0px 0px 10px 10px;
+    border: 3px solid #F5F5F5;
+	box-shadow: 1px 1px 8px 3px #bfbebe;
+	height: 100px;
+    max-height: 100px;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+	padding: 12px;
 }
-    
-    b.higlight {
-    color: #ff9915;
+
+  .ad-info2 {
+    background-color: #fff9d3;
+    border-radius: 0px 0px 10px 10px;
+    border: 3px solid #F5F5F5;
+    box-shadow: 1px 1px 8px 3px #bfbebe;
+    padding: 12px;
+    color: #148b6b;
+    font-weight: 500;
+	height: 100px;
+    max-height: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
 }
-    
-    ::-webkit-scrollbar {
+
+h1.latest_post {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #117679;
+}
+.mb-20 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+py-24 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+  body {
+    line-height: inherit;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+  
+  
+  @media (min-width: 992px){
+.col-md-3 {
+    width: 18%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* margin-left: 20px; */
+    /* margin-bottom: 20px; */
+    margin: 7px 9px 35px 16px;}
+		}
+		
+		
+  .biseller-column a {
+    display: block;
+    padding-top: 5px;
+}
+  .biseller-column img {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 10px #F9F9F9;
+    -webkit-box-shadow: 0 0 10px #F9F9F9;
+    -moz-box-shadow: 0 0 10px #F9F9F9;
+    box-shadow: 1px 1px 8px 6px #bfbebe;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+  span.price {
+    background-color: rgba(89, 194, 175, 0.79);
+    color: #FFF;
+    display: block;
+    font-size: 16px;
+    padding: 7px 7px;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    top: 5px;
+    z-index: 2;
+    line-height: 1;
+    letter-spacing: 1px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    border-radius: 10px 3px 0px 50px;
+}
+  .ad-info2 {
+    background-color: #fff9d3;
+    border-radius: 0px 0px 10px 10px;
+    border: 3px solid #F5F5F5;
+    box-shadow: 1px 1px 8px 3px #bfbebe;
+    padding: 12px;
+    color: #148b6b;
+    font-weight: 500;
+}
+
+
+
+
+@media (max-width: 640px){
+.col-md-3.biseller-column {
+    padding: 0 8px;}
+}
+
+@media (max-width: 991px){
+.col-md-3.biseller-column {
+    width: 48.333%;
+    float: right;}
+}
+@media (max-width: 1080px){
+.col-md-3.biseller-column {
+   /* padding: 0 10px;*/
+	    padding: 10px 30px 19px 5px;position: relative;}
+}
+  </style>
+  
+  
+  
+  
+<style>
+  
+ /*.flex.flex-wrap.-m-4 {
+    background-color: aliceblue;
+    border: 8px solid #f3f2f2;
+    padding: 11px;
+    box-shadow: 1px 1px 8px 4px #cee4e2;
+}*/
+  .leading-relaxed {
+    line-height: 1.625;
+    color: #125a52;
+    font-weight: bolder;
+}p.lg\:w-2\/3.mx-auto.leading-relaxed.text-base.head {
+    color: #1c8979;
+}
+  
+  button.login {
+    color: #fff;
+    font-size: 16px;
+        background-color: #14737a;
+
+    padding: 7px 28px;
+    border: 3px solid #71cbc2;
+    border-radius: 25px;
+    font-weight: bolder;
+    /*width: 110px; */
+    align-items: center;
+    letter-spacing: 1px;
+}
+   button.login:hover {
+    color: #fff;
+    font-size: 15px;
+    background-color: #0d9182;
+ 
+}
+     h5.signup:hover {
+    color: #fff;
+    font-size: 15px;
+    background-color: #14737a;
+}
+  
+   iframe{
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+ span.ml-3.text-xl {
+    color: #ffffff;
+} 
+footer.text-gray-600.body-font {
+    background-color: #117679;
+}
+p.text-sm.text-gray-500.sm\:ml-4.sm\:pl-4.sm\:border-l-2.sm\:border-gray-200.sm\:py-2.sm\:mt-0.mt-4 {
+    color: aliceblue;
+}a.text-gray-600.ml-1 {
+    color: aliceblue;
+}
+  
+  
+  
+header.text-gray-600.body-font {
+    background-color: #117679;
+        border-bottom: 4px solid #d7d7d7;
+    color: #fff;
+    /* box-shadow: inset 1px 1px 6px 0px #0a3d3e; */
+}  
+  
+
+::-webkit-scrollbar {
     width: 12px;
 }
 
- 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     border-radius: 10px;
 }
  
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px #241fcd;
+    -webkit-box-shadow: inset 0 0 6px #279da0;
 	
+}  
+.bg-gray-100.rounded.flex.p-4.h-full.items-center {
+    border: 2px solid #e3e3e3;
+    box-shadow: inset 2px -1px 15px 13px #c7c7c7;
+    border-style: outset;
+    border-width: 5 px;
+    border-color: coral;
 }
-    </style>
- 
+ .text-indigo-500 {
+color: #1cb312;
+}
+  .text-white {
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    background-color: #0a6660;
+}
+  a.inline-flex.items-center.bg-gray-100.border-0.py-1.px-3.focus\:outline-none.hover\:bg-gray-200.rounded.text-base.mt-4.md\:mt-0 {
+    background-color: #159163;
+    color: white;
+}
+  .font-medium {
+    font-weight: 500;
+    color: #000000;
+}
   
-   <style>
-    html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:0.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}body{background:#fff;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}hr{border:0;display:block;height:1px;background:#E3E7EB;background:linear-gradient(to right, rgba(227,231,235,0.1) 0, rgba(227,231,235,0.6) 50%, rgba(227,231,235,0.1) 100%);margin-top:24px;margin-bottom:24px}ul,ol{margin-top:0;margin-bottom:24px;padding-left:24px}ul{list-style:disc}ol{list-style:decimal}li>ul,li>ol{margin-bottom:0}dl{margin-top:0;margin-bottom:24px}dt{font-weight:700}dd{margin-left:24px;margin-bottom:24px}img{height:auto;max-width:100%;vertical-align:middle}figure{margin:24px 0}figcaption{font-size:16px;line-height:24px;padding:8px 0}img,svg{display:block}table{border-collapse:collapse;margin-bottom:24px;width:100%}tr{border-bottom:1px solid #E3E7EB}th{text-align:left}th,td{padding:10px 16px}th:first-child,td:first-child{padding-left:0}th:last-child,td:last-child{padding-right:0}html{font-size:18px;line-height:27px}@media (min-width: 641px){html{font-size:20px;line-height:30px;letter-spacing:-0.1px}}body{color:#5B6F82;font-size:1rem}body,button,input,select,textarea{font-family:"Lato", sans-serif}a{color:inherit;text-decoration:underline}a:hover,a:active{outline:0;text-decoration:none}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{clear:both;color:#202B36;font-family:"Roboto", sans-serif;font-weight:500}h1,.h1{font-size:36px;line-height:46px;letter-spacing:-0.2px}@media (min-width: 641px){h1,.h1{font-size:42px;line-height:52px;letter-spacing:-0.1px}}h2,.h2{font-size:30px;line-height:40px;letter-spacing:-0.1px}@media (min-width: 641px){h2,.h2{font-size:36px;line-height:46px;letter-spacing:-0.2px}}h3,.h3,blockquote{font-size:20px;line-height:30px;letter-spacing:-0.1px}@media (min-width: 641px){h3,.h3,blockquote{font-size:30px;line-height:40px;letter-spacing:-0.1px}}h4,h5,h6,.h4,.h5,.h6{font-size:18px;line-height:27px;letter-spacing:-0.1px}@media (min-width: 641px){h4,h5,h6,.h4,.h5,.h6{font-size:20px;line-height:30px;letter-spacing:-0.1px}}@media (max-width: 640px){.h1-mobile{font-size:36px;line-height:46px;letter-spacing:-0.2px}.h2-mobile{font-size:30px;line-height:40px;letter-spacing:-0.1px}.h3-mobile{font-size:20px;line-height:30px;letter-spacing:-0.1px}.h4-mobile,.h5-mobile,.h6-mobile{font-size:18px;line-height:27px;letter-spacing:-0.1px}}.text-light{color:rgba(255,255,255,0.8)}.text-light a{color:rgba(255,255,255,0.8)}.text-light h1,.text-light h2,.text-light h3,.text-light h4,.text-light h5,.text-light h6,.text-light .h1,.text-light .h2,.text-light .h3,.text-light .h4,.text-light .h5,.text-light .h6{color:#fff !important}.text-sm{font-size:18px;line-height:27px;letter-spacing:-0.1px}.text-xs{font-size:16px;line-height:24px;letter-spacing:-0.1px}h1,h2,.h1,.h2{margin-top:48px;margin-bottom:16px}h3,.h3{margin-top:36px;margin-bottom:12px}h4,h5,h6,.h4,.h5,.h6{margin-top:24px;margin-bottom:4px}p{margin-top:0;margin-bottom:24px}dfn,cite,em,i{font-style:italic}blockquote{color:#92A2B1;font-style:italic;margin-top:24px;margin-bottom:24px;margin-left:24px}blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}blockquote p{display:inline}address{color:#5B6F82;border-width:1px 0;border-style:solid;border-color:#E3E7EB;padding:24px 0;margin:0 0 24px}pre,pre h1,pre h2,pre h3,pre h4,pre h5,pre h6,pre .h1,pre .h2,pre .h3,pre .h4,pre .h5,pre .h6{font-family:"Courier 10 Pitch", Courier, monospace}pre,code,kbd,tt,var{background:#F6F8FA}pre{font-size:16px;line-height:24px;margin-bottom:1.6em;max-width:100%;overflow:auto;padding:24px;margin-top:24px;margin-bottom:24px}code,kbd,tt,var{font-family:Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;font-size:16px;padding:2px 4px}abbr,acronym{cursor:help}mark,ins{text-decoration:none}small{font-size:18px;line-height:27px;letter-spacing:-0.1px}b,strong{font-weight:700}button,input,select,textarea,label{font-size:18px;line-height:27px}.container,.container-sm{width:100%;margin:0 auto;padding-left:16px;padding-right:16px}@media (min-width: 481px){.container,.container-sm{padding-left:24px;padding-right:24px}}.container{max-width:1128px}.container-sm{max-width:848px}.container .container-sm{max-width:800px;padding-left:0;padding-right:0}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important;height:1px;width:1px;overflow:hidden;word-wrap:normal !important}.screen-reader-text:focus{border-radius:2px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;display:block;font-size:13px;letter-spacing:0px;font-weight:700;line-height:16px;text-transform:uppercase;text-decoration:none;background-color:#fff;color:#4992F0 !important;border:none;height:auto;left:8px;padding:16px 32px;top:8px;width:auto;z-index:100000}.list-reset{list-style:none;padding:0}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-primary{color:#4992F0}.text-secondary{color:#838DEA}.has-top-divider{position:relative}.has-top-divider::before{content:'';position:absolute;top:0;left:0;width:100%;display:block;height:1px;background:#E3E7EB;background:linear-gradient(to right, rgba(227,231,235,0.1) 0, rgba(227,231,235,0.6) 50%, rgba(227,231,235,0.1) 100%)}.has-bottom-divider{position:relative}.has-bottom-divider::after{content:'';position:absolute;bottom:0;left:0;width:100%;display:block;height:1px;background:#E3E7EB;background:linear-gradient(to right, rgba(227,231,235,0.1) 0, rgba(227,231,235,0.6) 50%, rgba(227,231,235,0.1) 100%)}.m-0{margin:0}.mt-0{margin-top:0}.mr-0{margin-right:0}.mb-0{margin-bottom:0}.ml-0{margin-left:0}.m-8{margin:8px}.mt-8{margin-top:8px}.mr-8{margin-right:8px}.mb-8{margin-bottom:8px}.ml-8{margin-left:8px}.m-16{margin:16px}.mt-16{margin-top:16px}.mr-16{margin-right:16px}.mb-16{margin-bottom:16px}.ml-16{margin-left:16px}.m-24{margin:24px}.mt-24{margin-top:24px}.mr-24{margin-right:24px}.mb-24{margin-bottom:24px}.ml-24{margin-left:24px}.m-32{margin:32px}.mt-32{margin-top:32px}.mr-32{margin-right:32px}.mb-32{margin-bottom:32px}.ml-32{margin-left:32px}.m-40{margin:40px}.mt-40{margin-top:40px}.mr-40{margin-right:40px}.mb-40{margin-bottom:40px}.ml-40{margin-left:40px}.m-48{margin:48px}.mt-48{margin-top:48px}.mr-48{margin-right:48px}.mb-48{margin-bottom:48px}.ml-48{margin-left:48px}.m-56{margin:56px}.mt-56{margin-top:56px}.mr-56{margin-right:56px}.mb-56{margin-bottom:56px}.ml-56{margin-left:56px}.m-64{margin:64px}.mt-64{margin-top:64px}.mr-64{margin-right:64px}.mb-64{margin-bottom:64px}.ml-64{margin-left:64px}.p-0{padding:0}.pt-0{padding-top:0}.pr-0{padding-right:0}.pb-0{padding-bottom:0}.pl-0{padding-left:0}.p-8{padding:8px}.pt-8{padding-top:8px}.pr-8{padding-right:8px}.pb-8{padding-bottom:8px}.pl-8{padding-left:8px}.p-16{padding:16px}.pt-16{padding-top:16px}.pr-16{padding-right:16px}.pb-16{padding-bottom:16px}.pl-16{padding-left:16px}.p-24{padding:24px}.pt-24{padding-top:24px}.pr-24{padding-right:24px}.pb-24{padding-bottom:24px}.pl-24{padding-left:24px}.p-32{padding:32px}.pt-32{padding-top:32px}.pr-32{padding-right:32px}.pb-32{padding-bottom:32px}.pl-32{padding-left:32px}.p-40{padding:40px}.pt-40{padding-top:40px}.pr-40{padding-right:40px}.pb-40{padding-bottom:40px}.pl-40{padding-left:40px}.p-48{padding:48px}.pt-48{padding-top:48px}.pr-48{padding-right:48px}.pb-48{padding-bottom:48px}.pl-48{padding-left:48px}.p-56{padding:56px}.pt-56{padding-top:56px}.pr-56{padding-right:56px}.pb-56{padding-bottom:56px}.pl-56{padding-left:56px}.p-64{padding:64px}.pt-64{padding-top:64px}.pr-64{padding-right:64px}.pb-64{padding-bottom:64px}.pl-64{padding-left:64px}.sr .has-animations .is-revealing{visibility:hidden}.input,.textarea{background-color:#fff;border-width:1px;border-style:solid;border-color:#E3E7EB;color:#5B6F82;max-width:100%;width:100%}.input::-webkit-input-placeholder,.textarea::-webkit-input-placeholder{color:#92A2B1}.input:-ms-input-placeholder,.textarea:-ms-input-placeholder{color:#92A2B1}.input::-ms-input-placeholder,.textarea::-ms-input-placeholder{color:#92A2B1}.input::placeholder,.textarea::placeholder{color:#92A2B1}.input::-ms-input-placeholder,.textarea::-ms-input-placeholder{color:#92A2B1}.input:-ms-input-placeholder,.textarea:-ms-input-placeholder{color:#92A2B1}.input:hover,.textarea:hover{border-color:#d4dae0}.input:active,.input:focus,.textarea:active,.textarea:focus{outline:none;border-color:#4992F0}.input[disabled],.textarea[disabled]{cursor:not-allowed;background-color:#F6F8FA;border-color:#F6F8FA}.input{-moz-appearance:none;-webkit-appearance:none;font-size:16px;letter-spacing:-0.1px;line-height:20px;border-radius:2px;padding:13px 16px;height:48px;box-shadow:none}.input .inline-input{display:inline;width:auto}.textarea{display:block;min-width:100%;resize:vertical}.textarea .inline-textarea{display:inline;width:auto}.field-grouped>.control:not(:last-child){margin-bottom:8px}@media (min-width: 641px){.field-grouped{display:flex}.field-grouped>.control{flex-shrink:0}.field-grouped>.control.control-expanded{flex-grow:1;flex-shrink:1}.field-grouped>.control:not(:last-child){margin-bottom:0;margin-right:8px}}.button{display:inline-flex;font-size:13px;letter-spacing:0px;font-weight:700;line-height:16px;text-transform:uppercase;text-decoration:none !important;background-color:#fff;color:#4992F0 !important;border:none;border-radius:2px;cursor:pointer;justify-content:center;padding:16px 32px;height:48px;text-align:center;white-space:nowrap}.button:active{outline:0}.button::before{border-radius:2px}.button-shadow{position:relative}.button-shadow::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;box-shadow:0 8px 24px rgba(32,43,54,0.12);mix-blend-mode:multiply;transition:box-shadow .15s ease}.button-shadow:hover::before{box-shadow:0 8px 24px rgba(32,43,54,0.25)}.button-sm{padding:8px 24px;height:32px}.button-sm.button-shadow::before{box-shadow:0 4px 16px rgba(32,43,54,0.12)}.button-sm.button-shadow:hover::before{box-shadow:0 4px 16px rgba(32,43,54,0.25)}.button-primary{color:#fff !important;transition:background .15s ease}.button-primary{background:#2e83ef;background:linear-gradient(65deg, #1274ED 0, #4992F0 100%)}.button-primary:hover{background:#3386ef;background:linear-gradient(65deg, #1777ed 0, #4e95f0 100%)}.button-block{display:flex}.site-header{position:relative;padding:24px 0}.site-header::before{content:'';position:absolute;top:0;left:16%;width:84%;height:500px;background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ4MCIgaGVpZ2h0PSI2NTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+ICAgIDxwYXRoIGQ9Ik03MzEuMjA3IDY0OS44MDJDOTM1LjQ4NCA2NDIuMTQgMTQ4MCAzMzcuMzI1IDE0ODAgMTgwLjg4OGMwLTE1Ni40MzgtMzA5Ljc0NC0zNi4wNTUtNzIwLTM2LjA1NVMwLTE3NC40ODMgMCAxMzUuMTQ0YzAgMzA5LjYyNyA1MjYuOTMgNTIyLjMyIDczMS4yMDcgNTE0LjY1OHoiIGZpbGw9IiNGNkY4RkEiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);background-size:1140px 500px;background-repeat:no-repeat}.site-header-inner{position:relative;display:flex;justify-content:space-between;align-items:center}.header-links{display:inline-flex}.header-links li{display:inline-flex}.header-links a:not(.button){font-size:13px;line-height:18px;letter-spacing:0px;font-weight:700;color:#5B6F82;text-transform:uppercase;text-decoration:none;line-height:16px;padding:8px 24px}.header-links a:not(.button):hover,.header-links a:not(.button):active{color:#202B36}@media (min-width: 641px){.site-header{position:relative;padding:24px 0}.site-header::before{top:-50%;left:20%;width:80%;height:651px;background-size:1480px 651px}}.hero{position:relative;padding-top:40px;padding-bottom:40px}.hero-paragraph{margin-bottom:18px;text-align: justify;}.hero-browser{position:relative;margin-top:80px}.hero-browser-inner{position:relative}.hero-browser-inner svg{width:100%;height:auto;overflow:visible}.bubble-1,.bubble-2,.bubble-3,.bubble-4{position:absolute}.bubble-1 svg,.bubble-2 svg,.bubble-3 svg,.bubble-4 svg{height:auto}.bubble-1{top:-15px;left:70px}.bubble-1 svg{width:34px}.bubble-2{bottom:0;right:-30px}.bubble-2 svg{width:78px}.bubble-3{left:-40px;bottom:-40px}.bubble-3 svg{width:143px}.bubble-4{top:-25px;right:-54px}.bubble-4 svg{width:104px}@media (min-width: 641px){.hero{padding-top:80px;padding-bottom:120px}
-      
-      @media (min-width: 641px)
-.hero-paragraph {
-    margin-bottom: 12px;
-    padding-left: 0px;
-    padding-right: 1px;
+  audio, canvas, embed, iframe, img, object, svg, video {
+    /* display: block; */
+    /* vertical-align: middle; */
+   }
+	
+	
+.h-full.flex.items-center.border-gray-200.border.p-4.rounded-lg {
+    background-color: #c5d0db;
+    background-image: linear-gradient(120deg, RGBA(251, 152, 155, 0.49) 0%, #e1e1e1 100%);
 }
-      /* .hero-paragraph{margin-bottom:40px;padding-left:72px;padding-right:72px} */
-     
-     .bubble-1 svg,.bubble-2 svg,.bubble-3 svg,.bubble-4 svg{width:auto}.bubble-1{top:85px;left:-30px}.bubble-2{bottom:-8px;right:-75px}.bubble-3{left:-140px;bottom:-120px}.bubble-4{top:-35px;right:-110px}}.features{position:relative}.features::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:482px;background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwNSIgaGVpZ2h0PSI0ODIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+ICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICA8cGF0aCBkPSJNODQuMjEyIDQ4MUMzMy4xNTIgNDQ3LjQ3IDAgNDA3Ljg4MSAwIDM2Mi43NDMgMCAyMDQuNTA1IDQ3OC42NzQgMCA2MzYuODQ3IDBjMTU4LjE3NCAwIDMzLjQzNCAxNzIuNzQxIDMzLjQzNCAzMzAuOTggMCA1NS43ODIgNi42NDYgMTA3LjAzNSA4LjMyMyAxNTAuMDJIODQuMjEyeiIgZmlsbD0iI0Y2RjhGQSIvPiAgICA8cGF0aCBkPSJNMTEwNC44MTcgNDgxLjI0MmwtODYxLjQ4NS0uMTdDMjExLjM4MiA0NTMuMjc4IDE5MiA0MjIuMDEzIDE5MiAzODcuNTA0IDE5MiAyMjkuMjggNDc3Ljc5MSA0IDYzNS45NyA0IDc5NC4xNDcgNCAxMjA1IDE0OS4zNTggMTIwNSAzMDcuNTgxYzAgNTkuNDQ1LTQwLjgyMyAxMjAuNTQzLTEwMC4xODMgMTczLjY2MXoiIGZpbGwtb3BhY2l0eT0iLjUiIGZpbGw9IiNGRkYiLz4gIDwvZz48L3N2Zz4=);background-size:1205px 482px;background-repeat:no-repeat}.features-wrap{display:flex;flex-wrap:wrap;justify-content:center;margin-right:-12px;margin-left:-12px}.features-wrap:first-child{margin-top:-8px}.features-wrap:last-child{margin-bottom:-8px}.feature{padding:8px 12px;width:368px;max-width:344px;flex-grow:1}.feature-inner{height:100%}.feature-icon{position:relative;display:flex;justify-content:center;background:#fff;border-radius:50%}.feature-icon::before{content:'';position:absolute;top:0;width:80px;height:80px;border-radius:50%;box-shadow:0 16px 48px #E3E7EB;mix-blend-mode:multiply}@supports (-ms-ime-align: auto){.feature-icon::before{box-shadow:0 16px 48px rgba(32,43,54,0.12)}}.feature-title{margin-top:20px}@media (min-width: 641px){.features::before{left:55%;width:45%}.features-wrap:first-child{margin-top:-32px}.features-wrap:last-child{margin-bottom:-32px}.feature{padding:32px 12px}.feature-title{margin-top:16px}}.newsletter .section-inner{padding-bottom:64px}.newsletter .section-paragraph{margin-bottom:32px}.newsletter-form{max-width:475px;margin:0 auto}@media (min-width: 641px){.newsletter .section-inner{padding-bottom:120px}.newsletter .section-paragraph{margin-bottom:40px;padding-left:72px;padding-right:72px}}.is-boxed{background:#F6F8FA}.body-wrap{background:#fff;overflow:hidden;display:flex;flex-direction:column;min-height:100vh}.boxed-container{max-width:1440px;margin:0 auto;box-shadow:0 16px 48px #E3E7EB}@supports (-ms-ime-align: auto){.boxed-container{box-shadow:0 16px 48px rgba(32,43,54,0.12)}}main{flex:1 0 auto}.section-inner{position:relative;padding-top:48px;padding-bottom:48px}@media (min-width: 641px){.section-inner{padding-top:80px;padding-bottom:80px}}.site-footer{position:relative;font-size:14px;line-height:20px;letter-spacing:0px}.site-footer::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:259px;background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIyMTciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPiAgPGRlZnM+ICAgIDxwYXRoIGQ9Ik0yNjEuNyAyODYuNjgyYzQyMS40NzcgMCAxNDg4Ljk3NyAxNzYuMDc4IDE0ODguOTc3IDM5LjIzNHM0NzguNzU0LTI0OC4wNDMgNTcuMjc4LTI0OC4wNDNjLTE5OC43NDYgMC00NjguNTY2IDMuNTU1LTcxOS45NTctMTEuMjNDODA2LjI3MSA1MC4wNzYgNTQxLjkgMjcuMjI3IDM0NC45NzcgNTIuNDM4LTI3LjY2NSAxMDAuMTQ1LTE1OS43NzYgMjg2LjY4MyAyNjEuNyAyODYuNjgzeiIgaWQ9ImEiLz4gIDwvZGVmcz4gIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yODUgLTQxKSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgPG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI2EiLz4gICAgPC9tYXNrPiAgICA8dXNlIGZpbGw9IiM4MzhERUEiIHhsaW5rOmhyZWY9IiNhIi8+ICAgIDxwYXRoIGQ9Ik0yNDAuNzI3IDMyNi4zOTVjNDIxLjQ3NiAwIDk3Mi43NDQgMTc5Ljc4NyA5NzIuNzQ0IDQyLjk0M3MxMjkuMjg2LTE3NS43NDgtMjkyLjE5LTE3NS43NDgtMjU2LjMxNC0yMjYuNDk0LTI1Ni4zMTQtODkuNjVjMCAxMzYuODQzLTg0NS43MTcgMjIyLjQ1NS00MjQuMjQgMjIyLjQ1NXoiIGZpbGw9IiNBMEE2RUUiIG1hc2s9InVybCgjYikiIHRyYW5zZm9ybT0ibWF0cml4KC0xIDAgMCAxIDEzNTUuMTYyIDApIi8+ICAgIDxwYXRoIGQ9Ik00NDUuNyAzODcuNjgyYzQyMS40NzcgMCA5NzIuNzQ1IDE3OS43ODcgOTcyLjc0NSA0Mi45NDNzNTc5Ljk0MS0yNTUuMjQ2IDE1OC40NjUtMjU1LjI0Ni03MDYuOTY5LTE0Ni45OTYtNzA2Ljk2OS0xMC4xNTJjMCAxMzYuODQzLTg0NS43MTcgMjIyLjQ1NS00MjQuMjQgMjIyLjQ1NXoiIGZpbGw9IiM2MjZDRDUiIG1hc2s9InVybCgjYikiLz4gIDwvZz48L3N2Zz4=);background-size:1440px 259px;background-repeat:no-repeat}.site-footer a{color:rgba(255,255,255,0.8);text-decoration:none}.site-footer a:hover,.site-footer a:active{color:#fff;text-decoration:underline}.site-footer-inner{position:relative;display:flex;flex-wrap:wrap;padding-top:40px;padding-bottom:40px}.footer-brand,.footer-links,.footer-social-links,.footer-copyright{flex:none;width:100%;display:inline-flex;justify-content:center}.footer-brand,.footer-links,.footer-social-links{margin-bottom:24px}.footer-links li+li,.footer-social-links li+li{margin-left:16px}.footer-social-links li{display:inline-flex}.footer-social-links li a{padding:8px}@media (min-width: 641px){.site-footer::before{height:202px}.site-footer-inner{justify-content:space-between}.footer-brand,.footer-links,.footer-social-links,.footer-copyright{flex:50%}.footer-brand,.footer-copyright{justify-content:flex-start}.footer-links,.footer-social-links{justify-content:flex-end}.footer-links{order:1;margin-bottom:0}}
 
-    </style>  
+.border-2.border-gray-200.px-4.py-6.rounded-lg {
+    background-color: #c5d0db;
+    background-image: linear-gradient(120deg, RGBA(251, 152, 155, 0.49) 0%, #e1e1e1 100%);
+}
+
+.h-full.p-6.rounded-lg.border-2.border-gray-300.flex.flex-col.relative.overflow-hidden {
+    background-color: #c5d0db;
+    background-image: linear-gradient(120deg, RGBA(251, 152, 155, 0.49) 0%, #e1e1e1 100%);
+}
+.h-full.p-6.rounded-lg.border-2.border-indigo-500.flex.flex-col.relative.overflow-hidden {
+    background-color: #a7a58f;
+    background-image: linear-gradient(120deg, RGBA(251, 152, 155, 0.49) 0%, #d7be0c 100%);
+}
+
+.h-full.text-center {
+    background-color: #ebe6e6;
+    background-image: linear-gradient(120deg, RGBA(251, 152, 155, 0.49) 0%, #7e8f89e3 100%);
+    border-radius: 20px;
+    padding: 31px;
+}
+  
+  
+  
+section.text-gray-600.body-font.sbdigitallibraryone {
+    /* background-color: #747070; */
+    /* background-image: linear-gradient(106deg, #ced7a9 0%, #117679 100%); */
+    border: 8px solid #f3f2f2;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 8px 4px #cee4e2;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: url(https://1.bp.blogspot.com/-CE5tjUL_ezw/X0tNn1bciEI/AAAAAAAADJU/7j1tO5p90_I3SU_2hEUVIYcM6OnzqmgGQCLcBGAsYHQ/s1600/banner.png) no-repeat 0px 0px;
+    color: #121212;
+    background-size: cover;
+}
+  
+  section.text-gray-600.body-font.sbdigitallibrarytwo {
+    background-color: #fff;
+	 
+}
+  
+  section.text-gray-600.body-font.sbdigitallibrarythree {
+    background-color: #b1b1b1;
+	 border: 8px solid #f3f2f2;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 8px 4px #cee4e2;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+  
+  
+  section.text-gray-600.body-font.sbdigitallibraryfour {
+    background-color: aliceblue;
+	 border: 8px solid #f3f2f2;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 8px 4px #cee4e2;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+  
+  section.text-gray-600.body-font.sbdigitallibraryfive {
+    background-color: #b7852e;
+	 border: 8px solid #f3f2f2;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 8px 4px #cee4e2;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+span.name {
+    color: #f3c500;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	text-decoration: none;
+}
+
+a.name2 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.50em;
+    color: #cbece7;
+    text-decoration: none;
+}
+
+a.text-gray-600.ml-1 {
+    color: #117679;
+}
+.text-gray-600 {
+    --tw-text-opacity: 1;
+    color: rgb(161 161 161);
+}
+
+.text-gray-500 {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0);
+}
+</style>
+
+
+<style>
+/* number of images*/
+.gallery {
+  --d: 10s;
+  /* duration */
+  display: grid;
+  width: 220px;
+}
+
+.gallery > img {
+  grid-area: 1/1;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 10px solid #f2f2f2;
+  box-shadow: 0 0 4px #0007;
+  z-index: 2;
+  animation: slide var(--d) infinite, z-order var(--d) infinite steps(1);
+  margin-top: 65px;
+}
+
+.gallery img:last-child {
+  animation-name: slide, z-order-last;
+}
+
+.gallery > img:nth-child(1) {
+  animation-delay: calc(0*var(--d));
+  --r: -3deg;
+}
+
+.gallery > img:nth-child(2) {
+  animation-delay: calc(-0.2*var(--d));
+  --r: 2deg;
+}
+
+.gallery > img:nth-child(3) {
+  animation-delay: calc(-0.4*var(--d));
+  --r: 9deg;
+}
+
+.gallery > img:nth-child(4) {
+  animation-delay: calc(-0.6*var(--d));
+  --r: 19deg;
+}
+
+.gallery > img:nth-child(5) {
+  animation-delay: calc(-0.8*var(--d));
+  --r: -16deg;
+}
+
+@keyframes slide {
+  10% {
+    transform: translateX(120%) rotate(var(--r));
+  }
+  0%, 100%, 20% {
+    transform: translateX(0%) rotate(var(--r));
+  }
+}
+@keyframes z-order {
+  10%, 20% {
+    z-index: 1;
+  }
+  80% {
+    z-index: 2;
+  }
+}
+@keyframes z-order-last {
+  10%, 20% {
+    z-index: 1;
+  }
+  90% {
+    z-index: 2;
+  }
+}
+
+</style>
 </head>
-<body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
-        <header class="site-header">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-                            <a href="/">
-                               <svg height="32" viewbox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
-                                    <title>visibleon.in</title>
-                                    <defs>
-                                        <lineargradient id="logo-gradient-b" x1="100%" x2="0%" y1="0%" y2="100%">
-                                            <stop offset="0%" stop-color="#39D8C8">
-                                            <stop offset="47.211%" stop-color="#BCE4F4">
-                                            <stop offset="100%" stop-color="#838DEA">
-                                        </stop></stop></stop></lineargradient>
-                                        <path d="M32 16H16v16H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h28a2 2 0 0 1 2 2v14z" id="logo-gradient-a">
-                                        <lineargradient id="logo-gradient-c" x1="23.065%" y1="25.446%" y2="100%">
-                                            <stop offset="0%" stop-color="#1274ED" stop-opacity="0">
-                                            <stop offset="100%" stop-color="#1274ED">
-                                        </stop></stop></lineargradient>
-                                    </path></defs>
-                                   <!-- <g fill="none" fill-rule="evenodd">
-                                        <mask id="logo-gradient-d" fill="#fff">
-                                            <use xlink:href="#logo-gradient-a"/>
-                                        </mask>
-                                        <use fill="url(#logo-gradient-b)" xlink:href="#logo-gradient-a"/>
-                                        <path fill="url(#logo-gradient-c)" mask="url(#logo-gradient-d)" d="M-16-16h32v32h-32z"/>
-                                    </g> -->
-                                </svg> 
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </header>
 
-<main>
-          
- <div class="content">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-10">
-          <div class="row justify-content-center">
-				
-					<div class="col-md-6">
-           <h1 class="hero-title h2-mobile mt-0 is-revealing">shopdekho</h1>
-                     
-                      <p class="hero-paragraph is-revealing"></p>
-                        <p class="hero-paragraph is-revealing">shopdekho.online is a platform for visibility of local shop (nearby shop) online <b class="higlight"> Contact us for make you own website.</b></p>
-                      
-                       
-                      
-                      
-                      
-                     <b class="button-primaryy"><a href="https://www.visibleon.in/p/contact-form.html">Contact Us</a></b> 
-					</div>
-		 			
-                 <!-- <div class="col-md-6">
-                          <p><img alt="Image" class="img-fluid1 bouncing-image1" src="https://host-codes.github.io/mycode/image/barchartimage_visibleon.png" /></p>
-                      	<p><img alt="Image" class="img-fluid2 bouncing-image2" src="https://host-codes.github.io/mycode/image/chartimage_visibleon.png" /></p>
-                    </div> -->
-				</div>
-			</div>
-		</div>
-	</div>
-</div> 
-                  
-                  
-                 
-                  
-                  
-                  
-                  
-                <section class="hero text-center">
-                <div class="container-sm">
-                   <div class="hero-inner">
-                        <!--  <h1 class="hero-title h2-mobile mt-0 is-revealing">Landing template for startups</h1>
-                        <p class="hero-paragraph is-revealing">Our landing page template works for all the devices, so you only have to setup it once, and get beautiful results forever.</p>
-                        <div class="hero-form newsletter-form field field-grouped is-revealing">
-                            <div class="control control-expanded">
-                                <input class="input" type="email" name="email" placeholder="Your best email&hellip;">
-                            </div>
-                            <div class="control">
-                                <a class="button button-primary button-block button-shadow" href="#">Get early access</a>
-                            </div>
-                        </div> -->
-                        <div class="hero-browser">
-                            <div class="bubble-3 is-revealing">
-                                <svg width="427" height="286" viewBox="0 0 427 286" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <path d="M213.5 286C331.413 286 427 190.413 427 72.5S304.221 16.45 186.309 16.45C68.396 16.45 0-45.414 0 72.5S95.587 286 213.5 286z" id="bubble-3-a"/>
-                                    </defs>
-                                    <g fill="none" fill-rule="evenodd">
-                                        <mask id="bubble-3-b" fill="#fff">
-                                            <use xlink:href="#bubble-3-a"/>
-                                        </mask>
-                                        <use fill="#4E8FF8" xlink:href="#bubble-3-a"/>
-                                        <path d="M64.5 129.77c117.913 0 213.5-95.588 213.5-213.5 0-117.914-122.779-56.052-240.691-56.052C-80.604-139.782-149-201.644-149-83.73c0 117.913 95.587 213.5 213.5 213.5z" fill="#1274ED" mask="url(#bubble-3-b)"/>
-                                        <path d="M381.5 501.77c117.913 0 213.5-95.588 213.5-213.5 0-117.914-122.779-56.052-240.691-56.052C236.396 232.218 168 170.356 168 288.27c0 117.913 95.587 213.5 213.5 213.5z" fill="#75ABF3" mask="url(#bubble-3-b)"/>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="bubble-4 is-revealing">
-                                <svg width="230" height="235" viewBox="0 0 230 235" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <path d="M196.605 234.11C256.252 234.11 216 167.646 216 108 216 48.353 167.647 0 108 0S0 48.353 0 108s136.959 126.11 196.605 126.11z" id="bubble-4-a"/>
-                                    </defs>
-                                    <g fill="none" fill-rule="evenodd">
-                                        <mask id="bubble-4-b" fill="#fff">
-                                            <use xlink:href="#bubble-4-a"/>
-                                        </mask>
-                                        <use fill="#7CE8DD" xlink:href="#bubble-4-a"/>
-                                        <circle fill="#3BDDCC" mask="url(#bubble-4-b)" cx="30" cy="108" r="108"/>
-                                        <circle fill="#B1F1EA" opacity=".7" mask="url(#bubble-4-b)" cx="265" cy="88" r="108"/>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="hero-browser-inner is-revealing">
-                                <svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="browser-a">
-                                            <stop stop-color="#F6F8FA" stop-opacity=".48" offset="0%"/>
-                                            <stop stop-color="#F6F8FA" offset="100%"/>
-                                        </linearGradient>
-                                        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="browser-b">
-                                            <stop stop-color="#F6F8FA" stop-opacity=".48" offset="0%"/>
-                                            <stop stop-color="#F6F8FA" offset="100%"/>
-                                        </linearGradient>
-                                        <linearGradient x1="100%" y1="-12.816%" x2="0%" y2="-12.816%" id="browser-c">
-                                            <stop stop-color="#F6F8FA" stop-opacity="0" offset="0%"/>
-                                            <stop stop-color="#E3E7EB" offset="50.045%"/>
-                                            <stop stop-color="#F6F8FA" stop-opacity="0" offset="100%"/>
-                                        </linearGradient>
-                                        <filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-1">
-                                            <feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
-                                            <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
-                                            <feColorMatrix values="0 0 0 0 0.12 0 0 0 0 0.17 0 0 0 0 0.21 0 0 0 0.2 0" in="shadowBlurOuter"/>
-                                        </filter>
-                                    </defs>
-                                    <g fill="none" fill-rule="evenodd">
-                                        <rect width="800" height="450" rx="4" fill="#FFF" style="mix-blend-mode:multiply;filter:url(#dropshadow-1)"/>
-                                        <rect width="800" height="450" rx="4" fill="#FFF"/>
-                                        <g fill="url(#browser-a)" transform="translate(47 67)">
-                                            <path d="M146 0h122v122H146zM0 0h122v122H0zM292 0h122v122H292zM438 0h122v122H438zM584 0h122v122H584z"/>
-                                        </g>
-                                        <g transform="translate(47 239)" fill="url(#browser-b)">
-                                            <path d="M146 0h122v122H146zM0 0h122v122H0zM292 0h122v122H292zM438 0h122v122H438zM584 0h122v122H584z"/>
-                                        </g>
-                                        <path fill="url(#browser-c)" d="M0 146h706v2H0z" transform="translate(47 67)"/>
-                                        <g transform="translate(0 12)">
-                                            <circle fill="#FF6D8B" cx="36" cy="4" r="4"/>
-                                            <circle fill="#FFCB4F" cx="52" cy="4" r="4"/>
-                                            <circle fill="#7CE8DD" cx="68" cy="4" r="4"/>
-                                            <path fill="url(#browser-c)" d="M0 20h800v2H0z"/>
-                                            <path fill="#E3E7EB" d="M742 2h24v4h-24z"/>
-                                        </g>
-                                        <g>
-                                            <path fill="#F6F8FA" d="M47 385h706v32H47z"/>
-                                            <path fill="#E3E7EB" d="M356 399h88v4h-88z"/>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="bubble-1 is-revealing">
-                                <svg width="61" height="52" viewBox="0 0 61 52" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <path d="M32 43.992c17.673 0 28.05 17.673 28.05 0S49.674 0 32 0C14.327 0 0 14.327 0 32c0 17.673 14.327 11.992 32 11.992z" id="bubble-1-a"/>
-                                    </defs>
-                                    <g fill="none" fill-rule="evenodd">
-                                        <mask id="bubble-1-b" fill="#fff">
-                                            <use xlink:href="#bubble-1-a"/>
-                                        </mask>
-                                        <use fill="#FF6D8B" xlink:href="#bubble-1-a"/>
-                                        <path d="M2 43.992c17.673 0 28.05 17.673 28.05 0S19.674 0 2 0c-17.673 0-32 14.327-32 32 0 17.673 14.327 11.992 32 11.992z" fill="#FF4F73" mask="url(#bubble-1-b)"/>
-                                        <path d="M74 30.992c17.673 0 28.05 17.673 28.05 0S91.674-13 74-13C56.327-13 42 1.327 42 19c0 17.673 14.327 11.992 32 11.992z" fill-opacity=".8" fill="#FFA3B5" mask="url(#bubble-1-b)"/>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="bubble-2 is-revealing">
-                                <svg width="179" height="126" viewBox="0 0 179 126" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <path d="M104.697 125.661c41.034 0 74.298-33.264 74.298-74.298s-43.231-7.425-84.265-7.425S0-28.44 0 12.593c0 41.034 63.663 113.068 104.697 113.068z" id="bubble-2-a"/>
-                                    </defs>
-                                    <g fill="none" fill-rule="evenodd">
-                                        <mask id="bubble-2-b" fill="#fff">
-                                            <use xlink:href="#bubble-2-a"/>
-                                        </mask>
-                                        <use fill="#838DEA" xlink:href="#bubble-2-a"/>
-                                        <path d="M202.697 211.661c41.034 0 74.298-33.264 74.298-74.298s-43.231-7.425-84.265-7.425S98 57.56 98 98.593c0 41.034 63.663 113.068 104.697 113.068z" fill="#626CD5" mask="url(#bubble-2-b)"/>
-                                        <path d="M43.697 56.661c41.034 0 74.298-33.264 74.298-74.298s-43.231-7.425-84.265-7.425S-61-97.44-61-56.407C-61-15.373 2.663 56.661 43.697 56.661z" fill="#B1B6F1" opacity=".64" mask="url(#bubble-2-b)"/>
-                                    </g>
-                                </svg>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-     <!-- <section class="features section text-center">
-                <div class="container">
-                    <div class="features-inner section-inner has-bottom-divider">
-                        <div class="features-wrap">
-                            <div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path d="M48.066 61.627c6.628 0 10.087-16.79 10.087-23.418 0-6.627-5.025-9.209-11.652-9.209C39.874 29 24 42.507 24 49.135c0 6.627 17.439 12.492 24.066 12.492z" fill-opacity=".24" fill="#A0A6EE"/>
-                                                <path d="M26 54l28-28" stroke="#838DEA" stroke-width="2" stroke-linecap="square"/>
-                                                <path d="M26 46l20-20M26 38l12-12M26 30l4-4M34 54l20-20M42 54l12-12" stroke="#767DE1" stroke-width="2" stroke-linecap="square"/>
-                                                <path d="M50 54l4-4" stroke="#838DEA" stroke-width="2" stroke-linecap="square"/>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <h3 class="feature-title">Form</h3>
-                                    <p class="text-sm">In Form You Save Student or Member detail like name, email, time etc. and Also for save monthly fee detail.</p>
-                                </div>
-                            </div>
-                            <div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path d="M48.066 61.627c6.628 0 10.087-16.79 10.087-23.418 0-6.627-5.025-9.209-11.652-9.209C39.874 29 24 42.507 24 49.135c0 6.627 17.439 12.492 24.066 12.492z" fill-opacity=".24" fill="#75ABF3"/>
-                                                <path d="M34 52V35M40 52V42M46 52V35M52 52V42M28 52V28" stroke="#4D8EF7" stroke-width="2" stroke-linecap="square"/>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <h3 class="feature-title">Admin Dashboard</h3>
-                                    <p class="text-sm">In Admin section we can see Detail of Student fee Receipt, in form of chart.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="features-wrap">
-                            <div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path d="M48.066 61.627c6.628 0 10.087-16.79 10.087-23.418 0-6.627-5.025-9.209-11.652-9.209C39.874 29 24 42.507 24 49.135c0 6.627 17.439 12.492 24.066 12.492z" fill-opacity=".32" fill="#FF97AC"/>
-                                                <path stroke="#FF6D8B" stroke-width="2" stroke-linecap="square" d="M49 45h6V25H35v6M43 55h2v-2M25 53v2h2M27 35h-2v2"/>
-                                                <path stroke="#FF6D8B" stroke-width="2" stroke-linecap="square" d="M43 35h2v2M39 55h-2M33 55h-2M39 35h-2M33 35h-2M45 49v-2M25 49v-2M25 43v-2M45 43v-2"/>
-                                            </g>
-                                        </svg>
 
-                                    </div>
-                                    <h3 class="feature-title">Notification</h3>
-                                    <p class="text-sm">Notification are send Automatically to every student at the end of month.</p>
-                                </div>
-                            </div>
-                            <div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
-                                            <g transform="translate(24 25)" fill="none" fill-rule="evenodd">
-                                                <path d="M24.066 36.627c6.628 0 10.087-16.79 10.087-23.418C34.153 6.582 29.128 4 22.501 4 15.874 4 0 17.507 0 24.135c0 6.627 17.439 12.492 24.066 12.492z" fill-opacity=".32" fill="#A0EEE5"/>
-                                                <circle stroke="#39D8C8" stroke-width="2" stroke-linecap="square" cx="5" cy="4" r="4"/>
-                                                <path stroke="#39D8C8" stroke-width="2" stroke-linecap="square" d="M23 22h8v8h-8zM11 10l9 9"/>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <h3 class="feature-title">Student Profile</h3>
-                                    <p class="text-sm">After login in student login section we can see fee receipt as well as Student Profile.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>   -->   
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
 
+
+<body>
+<header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+     <!-- <svg class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
       
-  
-  
-  
-  
+    <!--  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+	<!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license 
+	(Commercial License) Copyright 2022 Fonticons, Inc. --
+	<path d="M200 0C213.3 0 224 10.75 224 24V64H96V24C96 10.75 106.7 0 120 0H200zM32 151.7C32 136.1 41.04 121.9 55.19 115.3L79.6 103.8C90.58 98.67 102.6 96 114.7 96H205.3C217.4 96 229.4 98.67 240.4 103.8L264.8 115.3C278.1 121.9 288 136.1 288 151.7C288 166.1 280.5 178.7 269.1 185.8C280.6 194.6 288 208.4 288 223.1C288 240.7 279.5 255.4 266.5 263.1C279.5 272.6 288 287.3 288 303.1C288 320.7 279.5 335.4 266.5 344C279.5 352.6 288 367.3 288 384C288 400.7 279.5 415.4 266.5 424C279.5 432.6 288 447.3 288 464C288 490.5 266.5 512 240 512H80C53.49 512 32 490.5 32 464C32 447.3 40.52 432.6 53.46 424C40.52 415.4 32 400.7 32 384C32 367.3 40.52 352.6 53.46 344C40.52 335.4 32 320.7 32 303.1C32 287.3 40.52 272.6 53.46 263.1C40.52 255.4 32 240.7 32 223.1C32 208.4 39.4 194.6 50.87 185.8C39.53 178.7 32 166.1 32 151.7L32 151.7zM112 256H208C216.8 256 224 248.8 224 240C224 231.2 216.8 224 208 224H112C103.2 224 96 231.2 96 240C96 248.8 103.2 256 112 256zM112 352C103.2 352 96 359.2 96 368C96 376.8 103.2 384 112 384H208C216.8 384 224 376.8 224 368C224 359.2 216.8 352 208 352H112z"></path></svg> -->
+      
+      
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl"> <a href="/" class="name2"><span class="name">Garima</span>footwear </a></span>
+    </a>
+    <!-- <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-900" href="/">Home</a>
+       <a class="mr-5 hover:text-gray-900" href="#">Admin Login</a>
+      <a class="mr-5 hover:text-gray-900" href="#">Tool</a>
+      
+           
+            <a class="mr-5 hover:text-gray-900" href="#">Notice Board</a>
+      <a class="mr-5 hover:text-gray-900" href="#">Admin</a>
+      <!--<a class="mr-5 hover:text-gray-900">AboutUs</a>
+      <a class="mr-5 hover:text-gray-900">Privacy Policy</a> -- >
 
-     <!--  <section class="newsletter section">
-                <div class="container-sm">
-                    <div class="newsletter-inner section-inner">
-                        <div class="newsletter-header text-center is-revealing">
-                            <h2 class="section-title mt-0">Stay in the know</h2>
-                            <p class="section-paragraph">Here you can take Life time Free SubDomain Name like your_Business_name.visibleon.in</p>
-                            <p class="section-paragraph">______.visibleon.in This is main Domain name </p>
-                        
-                        <!--  <p class="section-paragraph">You Need to call This Number +91&nbsp;7408744689  For know More </p> -- >
-                        </div>
-                       <div class="footer-form newsletter-form field field-grouped is-revealing">
-                            <div class="control control-expanded">
-                                <input class="input" name="email" placeholder="Type Your email…" type="email" />
-                            </div>
-                            <div class="control">
-                                <a class="button button-primary button-block button-shadow" href="#">Get Detail</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -- >
-          
-          
-       
-          
-                    
-  <section class="newsletter section">     
-                   
-   <div class="content">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-10">
-				<div class="row justify-content-center">
-				
-					<div class="col-md-6">
-				
-					
-						<p><img alt="Image" class="img-fluid5" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI6g47W6j4UrmA1jJ_gf9IuDmMs9luVmG5ljSSaT3hor5eRmocFMWClBWG-2PwmItaV8BsjUB6Cio_36VKPbfSGYBiTf47Xn8QoA4BTTy3pA3AK5iBTDdA4fCzeWW_jsO14EeFiA1AyNCQo0DZBIBevvAVmVhy3X27FYGekuG1ONdDnOajTMACsksnsIre/s320/Software%20Detail%20visibleon.png" /></p>
-					</div>
-		 			
-	
-					
-					<div class="col-md-6">
-					     	<h3 class="heading">To Quickly Summarise  <h4 class=" mb-4">What
-You Are Getting to our service.</h4> </h3>
-						<p>website as well as online fee receipt.</p>
-                    
-				
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-                     
-   </section>   
-          
-          
-          
-          
-          
-          
-          
-          
-          
-    <div class="content">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-10">
-				<div class="row justify-content-center">
-				
-					<div class="col-md-6">
-				
-						<h3 class="heading">FAQ <h4 class=" mb-4">Frequently Asked Questions</h4> </h3>
-						<p>All your doubts, answered..</p>
-                        <b class="button-primaryy"><a href="https://www.visibleon.in/p/frequently-asked-questions.html">FAQ More</a></b> 
-						<p><img alt="Image" class="img-fluid" src="https://host-codes.github.io/mycode/image/FAQ.svg" /></p>
-					</div>
-		 			
-	
-					
-					<div class="col-md-6">
-					
-<section class="faq" id="faq">
-  <div class="container">						                  
-    <div class="faq-list">
-      <ul>
-         <li>
-          <i aria-hidden="true" class="fa fa-question-circle icon-help"></i> <a class="collapse" data-bs-target="#faq-list-1" data-bs-toggle="collapse">what Service we Provide? <i aria-hidden="true" class="fa fa-sm fa-angle-down icon-show"></i><i class="fa fa-sm fa-angle-up icon-close"></i></a>
-          <div class="collapse show" data-bs-parent=".faq-list" id="faq-list-1">
-            <p>
-              We provide online fee receipt, automatic notification system as well as website.
-            </p>
-          </div>
-        </li>
-        
-        <li>
-          <i aria-hidden="true" class="fa fa-question-circle icon-help"></i> <a data-bs-target="#faq-list-2" data-bs-toggle="collapse">How can take our Service? <i aria-hidden="true" class="fa fa-sm fa-angle-down icon-show"></i><i class="fa fa-sm fa-angle-up icon-close"></i></a>
-          <div class="collapse" data-bs-parent=".faq-list" id="faq-list-2">
-            <p>
-              For taking our Service you need to contact us, because there is not registration option, fill Contactus form we reach as soon as possible.
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <i aria-hidden="true" class="fa fa-question-circle icon-help"></i> <a class="collapsed" data-bs-target="#faq-list-3" data-bs-toggle="collapse">I' m a run Gym,school,Digital Library, how can I benefit from this? <i aria-hidden="true" class="fa fa-sm fa-angle-down icon-show"></i><i class="fa fa-sm fa-angle-up icon-close"></i></a>
-          <div class="collapse" data-bs-parent=".faq-list" id="faq-list-3">
-            <p>
-              visibleon is made exactly for Gym,school,Digital Library. We are the only tool on the market that allows you to make online fee receipt as well as website for your Business. we provide beautiful dashbard for control to add or delete account of your memeber or student. Also, visibleon is the best value for money offer on the market.
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <i aria-hidden="true" class="fa fa-question-circle icon-help"></i> <a class="collapsed" data-bs-target="#faq-list-4" data-bs-toggle="collapse"> This is one time Payment?<i aria-hidden="true" class="fa fa-sm fa-angle-down icon-show"></i><i class="fa fa-sm fa-angle-up icon-close"></i></a>
-          <div class="collapse" data-bs-parent=".faq-list" id="faq-list-4">
-            <p>
-              No, we accept payment monthly or yearly according to your convenience.
-you need to do every year, whether choose monthly or yearly.
-            </p>
-          </div>
-        </li>
-            <li>
-          <i aria-hidden="true" class="fa fa-question-circle icon-help"></i> <a class="collapsed" data-bs-target="#faq-list-5" data-bs-toggle="collapse">How soon will I get access to see my website and my Account after the payment?<i aria-hidden="true" class="fa fa-sm fa-angle-down icon-show"></i><i class="fa fa-sm fa-angle-up icon-close"></i></a>
-          <div class="collapse" data-bs-parent=".faq-list" id="faq-list-5">
-            <p>
-              After the payment , we take 4-5 day, after 4 to 5 days you can see and Access your website and login page for manage all thing.
-            </p>
-          </div>
-        </li>
-		
-      </ul>
-    </div>
-	
+    </nav> -->
+    
+    
+    <!-- <a class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" href="https://rowaterprayagraj.blogspot.com/p/demo.html"> Demo
+      <svg class="w-4 h-4 ml-auto" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+  </a> -->
+    
+   <!-- <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+      <svg class="w-4 h-4 ml-1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewbox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>-->
+    
+    
+    
+    
   </div>
-</section>					
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>   -->           
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-      </main>
-        <footer class="site-footer text-light">
-            <div class="container">
-                <div class="site-footer-inner">
-                    <div class="brand footer-brand">
-                        <a href="#">
-                            <svg height="32" viewbox="0 0 32 32" width="32">
-                                <title>shopdekho.online</title>
-                                <defs>
-                                    <path d="M32 16H16v16H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h28a2 2 0 0 1 2 2v14z" id="logo-gradient-footer-a">
-                                    <lineargradient id="logo-gradient-footer-b" x1="50%" y1="50%" y2="100%">
-                                        <stop offset="0%" stop-color="#FFF" stop-opacity="0">
-                                        <stop offset="100%" stop-color="#FFF">
-                                    </stop></stop></lineargradient>
-                                </path></defs>
-                               <!-- <g fill="none" fill-rule="evenodd">
-                                    <mask id="logo-gradient-footer-c" fill="#fff">
-                                        <use xlink:href="#logo-gradient-footer-a"/>
-                                    </mask>
-                                    <use fill-opacity=".32" fill="#FFF" xlink:href="#logo-gradient-footer-a"/>
-                                    <path fill="url(#logo-gradient-footer-b)" mask="url(#logo-gradient-footer-c)" d="M-16-16h32v32h-32z"/>
-                                </g> -->
-                            </svg>
+</header>
 
-                        </a>
-                    </div>
-                    <ul class="footer-links list-reset">
-                        <li>
-                            <a href="https://www.shopdekho.online/p/contact-form.html">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="https://www.shopdekho.online/p/frequently-asked-questions.html">FAQ's</a>
-                        </li>
-                        <li>
-                            <a href="#">Support</a>
-                        </li>
-                    </ul>
-                    <ul class="footer-social-links list-reset">
-                         <li>
-                            <a href="https://in.linkedin.com/in/visibleon">
-                                <span class="screen-reader-text">linkedin</span>
-                               <svg height="16" viewbox="0 0 448 512" width="16" xmlns="http://www.w3.org/2000/svg"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" fill="#0A66C2"></path></svg>
-                            </a>
-                        </li>
-                      
-                        <li>
-                            <a href="https://www.instagram.com/visibleon.io/">
-                                <span class="screen-reader-text">Instagram</span>
-                                <svg class="screen-Instagram" height="16" viewbox="0 0 448 512" width="16" xmlns="http://www.w3.org/2000/svg"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="#fccc63"></path></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Facebook</span>
-                                <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#1877F2">
-                                </path></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Twitter</span>
-                                <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#00acee">
-                                </path></svg>
-                            </a>
-                        </li>
-                       <!-- <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Google</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFFFFF"/>
-                                </svg>
-                            </a>
-                        </li>-->
-                    </ul>
-                    <div class="footer-copyright">© 2022 &nbsp;&nbsp; shopdekho.online &nbsp;|&nbsp;&nbsp;all rights reserved</div>
-                </div>
-            </div>
-        </footer>
+
+<section class="text-gray-600 body-font  sbdigitallibraryone" >
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Your shopname Shop</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base head">We Sell footwear in Prayagraj<br>Select Best footwear</p>
+    </div>
+    <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
+     
+     <!--<button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded" onclick="window.location.href = 'https://Demo.visibleon.in/p/student-login.html';" >Login</button> -->
+      
+      <!-- <button class="login flex mx-auto mt-6" onclick="window.location.href = 'https://demo.visibleon.in/p/student-login.html';" >Login</button> -->
+      
+    </div>
+	
+	     <center>	
+					<div class="gallery">
+				  <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a lovely kiss in the night">
+				  <img src="https://images.pexels.com/photos/2965276/pexels-photo-2965276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a women inside a car">
+				  <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a baby">
+				  <img src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a girl in the forest">
+				  <img src="https://images.pexels.com/photos/1456721/pexels-photo-1456721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a girl">
+					</div> 
+			  </center>	
+  </div>
+</section>
+
+
+
+<!--<section class="text-gray-600 body-font sbdigitallibrarytwo">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="text-center mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Our Speciality </h1>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Our Speciality for Customer</p>
+    </div>
+    <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+      <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke="currentColor" viewbox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">100% Good Quality</span>
+        </div>
+      </div>
+      <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke="currentColor" viewbox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium"> R.O. Water</span>
+        </div>
+      </div>
+      
+      
+       <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke="currentColor" viewbox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">Monthly Magazines</span>
+        </div>
+      </div>
+      
+      
+       <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke="currentColor" viewbox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium"> Full Time Electricity</span>
+        </div>
+      </div>
+      
+      
+      
+       <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke="currentColor" viewbox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium"> Library under CCTV Surveillance</span>
+        </div>
+      </div>
+      <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke="currentColor" viewbox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">Online Fee receipt</span>
+        </div>
+      </div>
+      <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke="currentColor" viewbox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">Fully Air Conditioned</span>
+        </div>
+      </div>
+      <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke="currentColor" viewbox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">Free Wi-Fi </span>
+        </div>
+      </div>
+      <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke="currentColor" viewbox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">Daily News Paper</span>
+        </div>
+      </div>
+      
+      
+      
+      
+       <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke="currentColor" viewbox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">Conductive and Inspiring Environment </span>
+        </div>
+      </div>
+    </div>
+   <!--<button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>-->
+  </div>
+  
+  
+  
+</section>
+  
+
+
+
+
+<div class="flex flex-col text-center w-full mb-20">
+      <h1 class="latest_post">Latest Post footwear</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">See our Latest footwear.</p>
     </div>
 
+<script>
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var response = JSON.parse(xhttp.responseText);
+            var user = response.user;
+            var showdata = "";
+
+            var filteredUser = user.filter(function(item) {
+                return item.User_ID.trim() !== '';
+            });
+
+            var start = Math.max(filteredUser.length - 5, 0);
+
+            for (var i = filteredUser.length - 1; i >= start; i--) {
+                console.log("Processing item:", filteredUser[i]);
+                // Log values for debugging
+                console.log("DATE:", filteredUser[i].DATE);
+                console.log("NAME:", filteredUser[i].NAME);
+                console.log("Colour:", filteredUser[i].Colour);
+                console.log("Quantity:", filteredUser[i].Quantity);
+                if (filteredUser[i].User_ID.trim() !== '' && filteredUser[i].Brand_name.trim() !== '') {
+                    showdata += '<div class="col-md-3 biseller-column">';	
+                    showdata += " <a href='view#" + filteredUser[i].User_ID+ "' target=\"_blank\"> "; 
+                    showdata += '<img src ="' + filteredUser[i].first_pic + '" width="242" height="314" />';
+                    showdata += '<span class="price"><i class="fa fa-inr" aria-hidden="true"></i>' + filteredUser[i].Price+ " </span> ";	  
+                    showdata += '</a>';
+                    showdata += '<div class="ad-info2">';
+                    showdata += '<h5><i class="fa fa-align-left" aria-hidden="true"></i>&nbsp;&nbsp;' + filteredUser[i].NAME + " </h5> ";
+                    showdata += '<span> <i class="fa fa-tags" aria-hidden="true"></i>&nbsp;&nbsp;' + filteredUser[i].Brand_name + " </span> <br>";
+                    showdata += '<span><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;&nbsp;' + filteredUser[i].DATE + " </span> ";
+                    showdata += '</div>';
+                    showdata += '</div>';
+                } else {
+                    // If required fields are missing, hide the block
+                    showdata += '<div class="col-md-3 biseller-column" style="display: none;"></div>';
+                }
+            }
+
+            document.write(showdata);
+        }
+    };
+
+    xhttp.open("GET", "https://script.google.com/macros/s/AKfycbwSRB2xbTZ7X2jcqgEv7Y9Gwe5W2RZI2eDV4nbhtAR_rFOo7HD1CEOf3VTzNOYNG9mdNA/exec", false);
+    xhttp.send();
+</script>
+
+<div class="flex flex-col text-center w-full mb-20">
+   <button class="login flex mx-auto mt-6" onclick="window.location.href = 'https://shopname.shopdekho.online/product';" >View More</button> 
+ 
+     <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base">View our All Footwear.</p>-->
+    </div>     
+   
+
+
+
+
+
+
+<div class="flex flex-col text-center w-full mb-20">
+      <h1 class="latest_post">Old Post footwear</h1>
+
+    </div>
+
+<script>
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var response = JSON.parse(xhttp.responseText);
+            var user = response.user;
+            var showdata = "";
+
+            var filteredUser = user.filter(function(item) {
+                return item.User_ID.trim() !== '';
+            });
+
+            var start = Math.max(filteredUser.length - 19, 0);
+
+            for (var i = filteredUser.length - 5; i >= start; i--) {
+                console.log("Processing item:", filteredUser[i]);
+                // Log values for debugging
+                console.log("DATE:", filteredUser[i].DATE);
+                console.log("NAME:", filteredUser[i].NAME);
+                console.log("Colour:", filteredUser[i].Colour);
+                console.log("Quantity:", filteredUser[i].Quantity);
+                if (filteredUser[i].User_ID.trim() !== '' && filteredUser[i].Brand_name.trim() !== '') {
+                    showdata += '<div class="col-md-3 biseller-column">';	
+                    showdata += " <a href='view#" + filteredUser[i].User_ID+ "' target=\"_blank\"> "; 
+                    showdata += '<img src ="' + filteredUser[i].first_pic + '" width="242" height="314" />';
+                    showdata += '<span class="price"><i class="fa fa-inr" aria-hidden="true"></i> ' + filteredUser[i].Price + " </span> ";	  
+                    showdata += '</a>';
+                    showdata += '<div class="ad-info">';
+                    showdata += '<h5> <i class="fa fa-align-left" aria-hidden="true"></i>&nbsp;&nbsp;' + filteredUser[i].NAME + " </h5> ";
+                    showdata += '<span> <i class="fa fa-tags" aria-hidden="true"></i>&nbsp;&nbsp;' + filteredUser[i].Brand_name + " </span> <br>";
+                    showdata += '<span><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;&nbsp;' + filteredUser[i].DATE + " </span> ";
+                    showdata += '</div>';
+                    showdata += '</div>';
+                } else {
+                    // If required fields are missing, hide the block
+                    showdata += '<div class="col-md-3 biseller-column" style="display: none;"></div>';
+                }
+            }
+
+            document.write(showdata);
+        }
+    };
+
+    xhttp.open("GET", "https://script.google.com/macros/s/AKfycbwSRB2xbTZ7X2jcqgEv7Y9Gwe5W2RZI2eDV4nbhtAR_rFOo7HD1CEOf3VTzNOYNG9mdNA/exec", false);
+    xhttp.send();
+</script>
+<div class="flex flex-col text-center w-full mb-20">
+   <button class="login flex mx-auto mt-6" onclick="window.location.href = 'https://shopname.shopdekho.online/product';" >View More</button> 
+ 
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">View our All Footwear.</p>
+    </div> 
+  
+  <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">GALLERY</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Our Gallery Images.</p>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh5.googleusercontent.com/p/AF1QipNFO4LIrqTRatlxsPQd8sUgVauNgxnpR7lt6f5B=s677-k-no">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Your shopname </h1>
+            <p class="leading-relaxed">Jhunsi Rd, Andanva, Jhusi Kohna, Uttar Pradesh 211019</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh5.googleusercontent.com/p/AF1QipMrIZmKz4oSVNFxJypcySo1gubo-44Hs3_iS4TS=w203-h360-k-no">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Your shopname </h1>
+            <p class="leading-relaxed">Jhunsi Rd, Andanva, Jhusi Kohna, Uttar Pradesh 211019</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh5.googleusercontent.com/p/AF1QipN_nkg0r_kOTtL4W44URwrb56THAIdUpViSGlkE=w203-h360-k-no">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Your shopname </h1>
+            <p class="leading-relaxed">Jhunsi Rd, Andanva, Jhusi Kohna, Uttar Pradesh 211019</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh5.googleusercontent.com/p/AF1QipMejo7UVcccN04dPVYEVtGbBK-iNUCH-lQRIXwZ=w203-h152-k-no">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Your shopname </h1>
+            <p class="leading-relaxed">Jhunsi Rd, Andanva, Jhusi Kohna, Uttar Pradesh 211019</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh5.googleusercontent.com/p/AF1QipN1l92M9yYYhSbvmfy4-LROiJNlmq2qwalD1L3j=w203-h270-k-no">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Your shopname </h1>
+            <p class="leading-relaxed">Jhunsi Rd, Andanva, Jhusi Kohna, Uttar Pradesh 211019</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh5.googleusercontent.com/p/AF1QipNNdENgW2TsGdXTxfCIINC7RJVhzOEfOiYGul8v=s677-k-no">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Your shopname </h1>
+            <p class="leading-relaxed">Jhunsi Rd, Andanva, Jhusi Kohna, Uttar Pradesh 211019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+  
+  
+
+  
+  
+ 
+
+  
+  
+  
+  <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"> Google Map</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Our Location On Google.</p>
+    </div>   
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22879.359026552254!2d81.93008940869973!3d25.429123088196363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39854b28fac97e4f%3A0xed99b92fe26eaa81!2sGARIMA%20FOOTWEAR%20AND%20SPORTSWEAR!5e0!3m2!1sen!2sin!4v1710625615378!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+  
+<section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+    <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+      <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22879.359026552254!2d81.93008940869973!3d25.429123088196363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39854b28fac97e4f%3A0xed99b92fe26eaa81!2sGARIMA%20FOOTWEAR%20AND%20SPORTSWEAR!5e0!3m2!1sen!2sin!4v1710625615378!5m2!1sen!2sin" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+      <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+        <div class="lg:w-1/2 px-6">
+		          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">Your shopname AND SPORTSWEAR</h2><br>
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+          <p class="mt-1">Jhunsi Rd, Andanva, Jhusi Kohna, Uttar Pradesh 211019</p>
+        </div>
+        <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">website</h2>
+          <a class="text-indigo-500 leading-relaxed">garimafootwear.shopdekho.online</a>
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+          <p class="leading-relaxed">081 151 11457</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+      <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Contact Us</h2>
+      <p class="leading-relaxed mb-5 text-gray-600">Mobile No. +91 811 511 1457 </p>
+	  <p class="leading-relaxed mb-5 text-gray-600">Mobile No. +91 873 906 6514 </p>
+      
+      <p class="text-xs text-gray-500 mt-3">Contact with me for more Detail.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+     <!-- <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg> 
+        <span class="ml-3 text-xl">Who We Are </span>
+      </a>-->
+      <p class="mt-2 text-sm text-gray-500">garimafootwear.shopdekho.online<br> We Sell Footwear for, to wear Home office School.</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Admin</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="https://garimafootwear.shopdekho.online/admin"class="text-gray-600 hover:text-gray-800">Admin Login</a>
+          </li>
+          
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Formal shoes</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Casual Shoes</a>
+          </li>
+     
+          
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Information</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Locations Map</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Terms of Use</a>
+          </li>
+        
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact Us</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Mobile No. +91 811 511 1457</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Mobile No. +91 873 906 6514</a>
+          </li>
+         
+        </nav>
+      </div>
+    </div>
+  </div>
+  
    
   
-  
-  <script>
-  
-  (function () {
-  const doc = document.documentElement
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Your shopname —
+        <a href="garimafootwear.shopdekho.online" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">garimafootwear.shopdekho.online</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
 
-  doc.classList.remove('no-js')
-  doc.classList.add('js')
-
-  // Reveal animations
-  if (document.body.classList.contains('has-animations')) {
-    /* global ScrollReveal */
-    const sr = window.sr = ScrollReveal()
-
-    sr.reveal('.hero-title, .hero-paragraph, .newsletter-header, .newsletter-form', {
-      duration: 1000,
-      distance: '40px',
-      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
-      origin: 'bottom',
-      interval: 150
-    })
-
-    sr.reveal('.bubble-3, .bubble-4, .hero-browser-inner, .bubble-1, .bubble-2', {
-      duration: 1000,
-      scale: 0.95,
-      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
-      interval: 150
-    })
-
-    sr.reveal('.feature', {
-      duration: 600,
-      distance: '40px',
-      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
-      interval: 100,
-      origin: 'bottom',
-      viewFactor: 0.5
-    })
-  }
-}())
-
-  </script>
-  
-   <script>var reAnimate = function(){
-     $('.santa-l').delay(12600).animate({'right': '1800px'}, 5000);
-     $('.animate__bounce').delay(3600).animate({'left': '1800px'}, 5000, reAnimate);
-}</script>
 </body>
 </html>
