@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+	<title>View | Your shopname</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<!-- Bootstrap CSS   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<!--	<link rel="icon" href="https://shopname.shopdekho.online/Image/Shop_dekho%20_shoes_footwear.png" type="image/x-icon">-->
+  <link rel="icon" id="favicon" type="image/x-icon" href="https://shopname.shopdekho.online/Image/Shop_dekho%20_shoes_footwear.png">
+  
+   <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Best Footwear for Home, Office, and School - ID: +userData.User_ID+">
+    <meta property="og:description" content="+userData.Description+">
+    <meta property="og:image" content="+userData.first_pic+">
+    <meta property="og:url" content="https://yourwebsite.com/page?userID=+userData.User_ID+">
+
+<!--<link rel="shortcut icon" href="https://shopname.shopdekho.online/Image/Shop_dekho%20_shoes_footwear.png" type="image/x-icon">-->
+
+
+
+<style>
+.bg-lightp {
+    background-color: #117679;
+}
+
+.navbar navbar-expand-lg navbar-light bg-lightp a span {
+    color: #f3c500;
+}
+a.navbar-brand span {
+    color: #cbece7;
+}
+
+a.navbar-brand span:hover {
+    color: #ffffff;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #ffffff;
+}
+</style>
+
+
+
+
+
+
+
+
+<style>
+  body{
+      font-family: 'Ubuntu Condensed', sans-serif;
+  }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #279da0;
+	
+}
+
+</style>
+
+
+<style>
+
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 10px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+ background-color: #5f626463; 
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  /*background-color: rgba(0, 0, 0, 0.8);*/
+ background-color: rgb(207 198 241);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #0d8387;
+    font-size: 13px;
+    padding: 8px 12px;
+    position: absolute;
+    top:-13px;
+	left:-8px;
+    background-color: #9b938885;
+    font-weight: bolder;
+    border-radius: 60px;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+    border: 2px solid #b4b5b7;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+
+<style>
+/* Your CSS Styles */
+
+/* Popup container */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 9999; /* Ensure it's on top of everything */
+}
+
+/* Popup content */
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Close icon */
+
+
+.close-icon {
+    position: absolute;
+    top: 2px;
+    right: -29px;
+    color: #f9f8f8;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: #1e1e1e;
+    width: 36px;
+    height: 36px;
+    border-radius: 31px;
+    border: 3px solid #ffffff;
+    font-weight: bolder;
+    /* margin-top: 8%; */
+    /* margin-left: 7.5%; */
+    line-height: 28px;
+    padding-left: 8px;
+}
+
+/* Adjust popup image size */
+.popup-img {
+    max-width: 100vw;
+    max-height: 93vh;
+    height: 93vh;
+    width: 60vw;
+}
+@media only screen and (max-width: 440px) {
+
+body {
+    background-color: #fff;
+  }
+  .popup-img {
+    max-width: 86vw;
+	width: 86vw;
+   max-height: 80vh;
+    height: 80vh;
+    }
+	
+	/* img.demop {
+    max-width: 25em;
+    width: 25em;
+    max-height: 50em;
+    height: 26em;} */
+	
+	.close-icon {
+    top: 8px;
+    right: -3px;}
+}
+
+
+  @media only screen and (max-width: 440px){
+img.demop {
+    max-width: 18em;
+    width: 18em;
+    max-height: 20em;
+  height: 20em;}
+    
+    .caption-container {
+    width: 18em;
+    max-width: 18em;}
+    
+.column {
+    float: left;
+    width: 47.66%;
+}
+        img.demo.cursor{
+    max-width: 36vw;
+    width: 36vw;
+    max-height: 23vh;
+    height: 23vh;}
+    .col-md-3{
+        padding-right: 9px;
+        padding-left: 39px;}
+    
+    .card{width: 86%;	}
+}
+  
+@media only screen and (min-width: 600px) {
+body {
+    background-color: #fff;
+  }
+  
+   img.demop {
+    max-width: 42em;
+    width: 42em;}
+  
+    img.demo.cursor.active {
+    max-width: 13vw;
+    width: 37vw;
+    max-height: 23vh;
+    height: 23vh;}
+  
+    img.demo.cursor{
+    max-width: 13vw;
+    width: 37vw;
+    max-height: 23vh;
+    height: 23vh;}
+  
+  .column {
+    float: left;
+    width: 25%;}
+}
+
+
+
+img.demop {
+    border: 3px solid #e9deff;
+    border-radius: 14px 14px 0px 0px;
+    box-shadow: 1px 1px 13px 0px rgb(131 131 131 / 75%);
+
+    max-height: 50em;
+    height: 26em;
+}
+  
+  img.demo.cursor.active {
+    border: 4px solid #7befae;
+    padding: 6px;
+    box-shadow: 2px 1px 8px 0px rgb(131 131 131 / 75%);}
+
+</style>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <style>
+  .card {
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    -webkit-box-shadow: 12px 14px 22px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 14px 22px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 1px 8px 0px rgb(131 131 131 / 75%);
+    margin-bottom: 29px;
+    border: 2px solid #e2e2e2;
+	
+	 position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+}
+  
+.col-md-6p {
+    margin: 0px;
+    padding: 30px;
+}
+.col-lg-4pp{
+    margin-bottom: 52px;
+    /* border: 2px solid #f8f9fa; */
+    border-radius: 5px;
+    padding: 48px;
+}
+
+#box2 {
+    margin-bottom: 10px;
+    border: 2px solid #f8f9fa;
+    border-radius: 11px;
+    padding-left: 20px;
+    padding-right: 6px;
+	background-color: #fff0f5;
+	padding-top: 10px;
+    padding-bottom: 10px;
+       background-image: linear-gradient(150deg, #ffa941 0%, #fa849c 100%);
+    box-shadow: 0px 5px 10px 0.05px rgb(225 147 91);
+}
+#box3 {
+    margin-bottom: 10px;
+    border: 2px solid #f8f9fa;
+    border-radius: 11px;
+    padding-left: 20px;
+    padding-right: 6px;
+	background-color: #e6e6fa;
+  
+	padding-top: 10px;
+    padding-bottom: 10px;
+  
+  
+      box-shadow: 0px 5px 10px 0.05px rgba(106,151,231,0.5);
+    animation: Inm-fadeIn 0.3s alternate;
+        background-image: linear-gradient(150deg, #227691 0%, #033236 100%);
+}
+#box4 {
+    margin-bottom: 10px;
+    border: 2px solid #f8f9fa;
+    border-radius: 11px;
+    padding-left: 20px;
+    padding-right: 6px;
+	/*background-color: #cfc6f1; */
+	padding-top: 10px;
+    padding-bottom: 10px;
+  background-image: linear-gradient(150deg, #DCE35B 0%, #45B649 100%);
+    box-shadow: 0px 5px 10px 0.05px rgba(99,192,92,0.5);
+}
+#box5 {
+    margin-bottom: 10px;
+    border: 2px solid #f8f9fa;
+    border-radius: 11px;
+    padding-left: 20px;
+    padding-right: 6px;
+    background-color: #e9deff;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(150deg, #ffd867 0%, #9f8a4d 100%);
+    box-shadow: 0px 5px 10px 0.05px rgb(197 171 87);
+
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+	
+ 
+}
+footer.d-flex.flex-wrap.justify-content-between.align-items-center.py-3.my-4.border-top {
+    background-color: #084c4e;
+}
+
+.bg-light {
+
+    background-color: #117679;
+}
+.navbar-light .navbar-brand {
+  color:#f3c500;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 0rem !important;
+	padding: 50px;
+	/*height: 100px;*/
+	color: #ffffff;
+	}
+.text-muted {
+    color: #ffffff !important;
+}
+
+img.card-img-top.img-fluid {
+    /* height: 100px; */
+    /* width: 100px; */
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 10px #F9F9F9;
+    /* -webkit-box-shadow: 0 0 10px #F9F9F9; */
+    -moz-box-shadow: 0 0 10px #F9F9F9;
+    box-shadow: 1px 1px 4px 1px #f1f1f1;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+h2.similarPdc {
+    font-size: 24px;
+    color: #02918b;
+}
+.text-success {
+    color: #ffffff !important;
+    font-size: 21px;
+}
+h2.contactmob {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #efb70d;
+}
+  </style>
+  
+  
+  <style>
+  i.fa.fa-whatsapp {
+    bottom: 10px;
+    left: 10px;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 16px 20px #25d366;
+    /* float: right; */
+    /* margin-top: 1px; */
+    border: 4px solid #25d36640;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 27px;
+    background-color: #efefef;
+    border-radius: 50px;
+} 
+  
+ 
+  i.fa.fa-facebook {
+    bottom: 10px;
+    left: 10px;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 16px 20px #4267B2;
+    /* float: right; */
+    /* margin-top: 1px; */
+    border: 4px solid #466ab345;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 31px;
+    background-color: #efefef;
+    border-radius: 50px;
+} 
+  
+  
+    i.fa.fa-twitter {
+    bottom: 10px;
+    left: 10px;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 16px 20px #1c9cea;
+    /* float: right; */
+    /* margin-top: 1px; */
+    border: 4px solid #1c9cea29;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 31px;
+    background-color: #efefef;
+    border-radius: 50px;
+} 
+ i.fa.fa-google-plus {
+    bottom: 10px;
+    left: 10px;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 16px 20px #db4a39;
+    /* float: right; */
+    /* margin-top: 1px; */
+    border: 4px solid #db4a390a;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 31px;
+    background-color: #efefef;
+    border-radius: 50px;
+}  
+ i.fa.fa-telegram {
+    bottom: 10px;
+    left: 10px;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 16px 20px #1d91cc;
+    /* float: right; */
+    /* margin-top: 1px; */
+    border: 4px solid #1d91cc42;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 27px;
+    
+    border-radius: 50px;
+} 
+  
+#container .list li .list-left {
+    width: 39%;
+    margin-left: 3%;
+    float: left;
+}
+  #container .list li .list-right {
+    width: 13%;
+    float: right;
+    text-align: left;
+}
+  
+  
+  h1.title {
+    font-size: 2rem;
+    color: #117679;
+    padding-bottom: 56px;
+}
+  </style>
+</head>
+<body>
+	
+  <nav class="navbar navbar-expand-lg navbar-light bg-lightp"> <a class="navbar-brand" href="https://shopname.shopdekho.online/">Your<span>shopname<</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+   <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a> </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="btn btn-md btn-danger ml-4 text-light"><i class="fa fa-shopping-cart" aria-hidden="true"></i> CART</a></li>
+      </ul>
+    </div> -->
+  </nav>
+  
+
+
+<div class="container mt-5">
+  <div class="row">
+    <!--<div class="col-md-12"> Ads ID </div>-->
+  </div>
+</div>
+
+
+ <div id="userDataContainer"></div> <!-- Container for user data -->
+
+ <script>
+        // Function to parse User_ID from URL
+        function getUserIdFromUrl() {
+            var url = window.location.href;
+            var hashIndex = url.indexOf('#');
+         // document.getElementById('favicon').setAttribute('href', userData.first_pic);
+            if (hashIndex !== -1 && hashIndex < url.length - 1) {
+                return url.substring(hashIndex + 1);
+             // document.getElementById('favicon').setAttribute('href', userData.first_pic);
+            }
+            return '';
+        }
+//document.getElementById('favicon').setAttribute('href', userData.first_pic);
+        // Get User_ID from URL
+        var requestedUserId = getUserIdFromUrl();
+
+        // Create a new XMLHttpRequest object
+        var xhttp = new XMLHttpRequest();
+
+        // Define the function to handle the response
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                // Parse the JSON response
+                var response = JSON.parse(xhttp.responseText);
+                
+                // Find user data with matching User_ID
+                var userData = response.user.find(function(item) {
+                    return item.User_ID === requestedUserId;
+                });
+
+                // Display the data for the requested User_ID
+                if (userData) {
+                  document.getElementById('favicon').setAttribute('href', userData.first_pic);
+                    var userDataContainer = document.getElementById("userDataContainer");
+console.log(userData.first_pic)
+                    var showdata = '<div class="userpost">';
+                   /* showdata += '<h2>' + userData.NAME + '</h2>';
+                    showdata += '<p><strong>Brand Name:</strong> ' + userData.Brand_name + '</p>';
+                    showdata += '<p><strong>Quantity:</strong> ' + userData.Quantity + '</p>';
+                    showdata += '<p><strong>Size:</strong> ' + userData.Size + '</p>';
+                    showdata += '<p><strong>Date:</strong> ' + userData.DATE + '</p>';
+                    showdata += '<p><strong>Colour:</strong> ' + userData.Colour + '</p>';
+                    showdata += '<img src="' + userData.FILE1H + '" alt="Image" width="400">';*/
+                     showdata += '</div>'; // userpost End
+
+ showdata += '<div class="container">';
+  showdata += '<div class="row">';
+  showdata += '<div class="col-lg-8">';
+    showdata += '<div id="box1">';
+			/* showdata += ' <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">';
+				showdata += '<div class="carousel-inner">';
+				  showdata += '<div class="carousel-item active"> <img class="d-block w-100" src="' + userData.FILE1H + '" alt="First slide"> </div>';
+				  showdata += '<div class="carousel-item"> <img class="d-block w-100" src="' + userData.FILE2I + '" alt="Second slide"> </div>';
+				 showdata += '</div>';
+				showdata += '<a href="#' + userData.FILE1H + '" class="carousel-control-prev"  role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a  href="#' + userData.FILE2I + '" class="carousel-control-next"  role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>'; 
+				showdata += '</div>';*/
+				
+			showdata += '<div class="row"><h1 class="title"> <i class="fa fa-align-left" style="font-size:25px;color:#fb8e83"></i>&nbsp;&nbsp;' + userData.NAME + '</h1></div>';	
+					
+ showdata += '<div class="container">';
+ showdata += '<div class="mySlides"><div class="numbertext">1 / 4</div><img   class="demop"  src="' + userData.first_pic + '"  ></div>';
+   showdata += '<div class="mySlides"><div class="numbertext">2 / 4</div><img class="demop" src="' + userData.second_pic + '"  ></div>';
+   showdata += '<div class="mySlides"><div class="numbertext">3 / 4</div><img   class="demop"  src="' + userData.third_pic + '"  ></div>';
+   showdata += '<div class="mySlides"><div class="numbertext">4 / 4</div><img class="demop" src="' + userData.fourth_pic + '"  ></div>';
+   showdata += '<a class="prev" onclick="plusSlides(-1)">❮</a>';
+   showdata += '<a class="next" onclick="plusSlides(1)">❯</a>';
+   showdata += '<div class="caption-container"><p id="caption"></p></div>';
+   showdata += '<div class="row">';
+     showdata += '<div class="column"><img  class="demo cursor"   src="' + userData.first_pic + '" onclick="currentSlide(1)" alt="1st Image"></div>';
+     showdata += '<div class="column"><img  class="demo cursor"   src="' + userData.second_pic + '"  onclick="currentSlide(2)" alt="2nd Image"></div>';
+     showdata += '<div class="column"><img  class="demo cursor"   src="' + userData.third_pic + '" onclick="currentSlide(3)" alt="3rd Image"></div>';
+     showdata += '<div class="column"><img  class="demo cursor"   src="' + userData.fourth_pic + '"  onclick="currentSlide(4)" alt="4th Image"></div>';
+  
+  showdata += '</div>';
+showdata += '</div>';
+
+ showdata += '<div class="popup-container" id="popupContainer">';
+ showdata += '<div class="popup-content"><span class="close-icon" onclick="closePopup()">X</span><img id="popupImg" class="popup-img"></div>';
+ showdata += '</div>';
+
+	
+			
+			
+			showdata += '</div><br><br>';// box1 End
+      showdata += '</div> <br><br><br><br>';// col-lg-8 End
+      showdata += ' <div class="col-lg-4">';
+	  
+	  
+	  
+	  
+	  
+	     showdata += '<div id="box5">';
+		            showdata += '<h2 class="text-success"><i class="fa fa-share-alt" aria-hidden="true"></i>&nbsp; Social Share</h2>';
+					
+		
+			
+    showdata += " <a href='whatsapp://send?text=Best%20footwear%20for%20%20Home%20office%20School.%20%20%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%BE%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AF%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%20%E0%A4%9D%E0%A5%82%E0%A4%82%E0%A4%B8%E0%A5%80%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%B9%E0%A5%88%20%2C%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%95%E0%A5%80%20%E0%A4%AB%E0%A5%81%E0%A4%9F%E0%A4%B5%E0%A4%BF%E0%A4%AF%E0%A4%B0%20%E0%A4%A6%E0%A5%87%E0%A4%96%E0%A4%A8%E0%A5%87%20%E0%A4%95%E0%A5%87%20%E0%A4%B2%E0%A4%BF%E0%A4%8F%20%E0%A4%B5%E0%A5%87%E0%A4%AC%E0%A4%B8%E0%A4%BE%E0%A4%87%E0%A4%9F%20%E0%A4%AA%E0%A5%87%20%E0%A4%95%E0%A5%8D%E0%A4%B2%E0%A4%BF%E0%A4%95%20%E0%A4%95%E0%A4%B0%20%E0%A4%95%E0%A5%87%20%E0%A4%A6%E0%A5%87%E0%A4%96%20%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82%20%20%E0%A4%94%E0%A4%B0%20%20%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%AA%E0%A5%87%20%E0%A4%86%E0%A4%95%E0%A4%B0%20%E0%A4%B2%E0%A5%87%20%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82%20%7C%20%20https%3A%2F%2Fgarimafootwear.shopdekho.online%2Fview%23"  + userData.User_ID+" " +userData.NAME+"  '> "; 
+                 // document.getElementById('favicon').setAttribute('href', userData.first_pic); 
+    showdata += '<span><i class="fa fa-whatsapp" style="font-size:20px;color:white;"></i>  </span> ';
+  showdata += '</a>';
+  
+  
+  showdata += '<a href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('Best%20footwear%20for%20%20Home%20office%20School.%20%20%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%BE%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AF%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%20%E0%A4%9D%E0%A5%82%E0%A4%82%E0%A4%B8%E0%A5%80%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%B9%E0%A5%88%20%2C%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%95%E0%A5%80%20%E0%A4%AB%E0%A5%81%E0%A4%9F%E0%A4%B5%E0%A4%BF%E0%A4%AF%E0%A4%B0%20%E0%A4%A6%E0%A5%87%E0%A4%96%E0%A4%A8%E0%A5%87%20%E0%A4%95%E0%A5%87%20%E0%A4%B2%E0%A4%BF%E0%A4%8F%20%E0%A4%B5%E0%A5%87%E0%A4%AC%E0%A4%B8%E0%A4%BE%E0%A4%87%E0%A4%9F%20%E0%A4%AA%E0%A5%87%20%E0%A4%95%E0%A5%8D%E0%A4%B2%E0%A4%BF%E0%A4%95%20%E0%A4%95%E0%A4%B0%20%E0%A4%95%E0%A5%87%20%E0%A4%A6%E0%A5%87%E0%A4%96%20%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82%20%20%E0%A4%94%E0%A4%B0%20%20%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%AA%E0%A5%87%20%E0%A4%86%E0%A4%95%E0%A4%B0%20%E0%A4%B2%E0%A5%87%20%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82%20%7C%20&amp;url=https%3A%2F%2Fgarimafootwear.shopdekho.online%2Fview%23' + userData.User_ID) + '" target="_blank">';
+showdata += '<span><i class="fa fa-facebook" style="font-size:20px;color:white;"></i></span>';
+showdata += '</a>';
+
+
+showdata += "<a href='https://twitter.com/intent/tweet/?text=Best%20footwear%20for%20%20Home%20office%20School.%20%20%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%BE%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AF%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%20%E0%A4%9D%E0%A5%82%E0%A4%82%E0%A4%B8%E0%A5%80%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%B9%E0%A5%88%20%2C%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%95%E0%A5%80%20%E0%A4%AB%E0%A5%81%E0%A4%9F%E0%A4%B5%E0%A4%BF%E0%A4%AF%E0%A4%B0%20%E0%A4%A6%E0%A5%87%E0%A4%96%E0%A4%A8%E0%A5%87%20%E0%A4%95%E0%A5%87%20%E0%A4%B2%E0%A4%BF%E0%A4%8F%20%E0%A4%B5%E0%A5%87%E0%A4%AC%E0%A4%B8%E0%A4%BE%E0%A4%87%E0%A4%9F%20%E0%A4%AA%E0%A5%87%20%E0%A4%95%E0%A5%8D%E0%A4%B2%E0%A4%BF%E0%A4%95%20%E0%A4%95%E0%A4%B0%20%E0%A4%95%E0%A5%87%20%E0%A4%A6%E0%A5%87%E0%A4%96%20%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82%20%20%E0%A4%94%E0%A4%B0%20%20%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%AA%E0%A5%87%20%E0%A4%86%E0%A4%95%E0%A4%B0%20%E0%A4%B2%E0%A5%87%20%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82%20%7C%20&amp;url=https%3A%2F%2Fgarimafootwear.shopdekho.online%2Fview%23"  +userData.User_ID+" " +userData.NAME+"'> ";
+showdata += '<span><i class="fa fa-twitter" style="font-size:20px;color:white;"></i>  </span> ';
+  showdata += '</a>';
+  
+     //showdata += " <a href='https://telegram.me/share/url?text=Best%20footwear%20for%20%20Home%20office%20School.%20%20%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%BE%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AF%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%20%E0%A4%9D%E0%A5%82%E0%A4%82%E0%A4%B8%E0%A5%80%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%B9%E0%A5%88%20%2C%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%95%E0%A5%80%20%E0%A4%AB%E0%A5%81%E0%A4%9F%E0%A4%B5%E0%A4%BF%E0%A4%AF%E0%A4%B0%20%E0%A4%A6%E0%A5%87%E0%A4%96%E0%A4%A8%E0%A5%87%20%E0%A4%95%E0%A5%87%20%E0%A4%B2%E0%A4%BF%E0%A4%8F%20%E0%A4%B5%E0%A5%87%E0%A4%AC%E0%A4%B8%E0%A4%BE%E0%A4%87%E0%A4%9F%20%E0%A4%AA%E0%A5%87%20%E0%A4%95%E0%A5%8D%E0%A4%B2%E0%A4%BF%E0%A4%95%20%E0%A4%95%E0%A4%B0%20%E0%A4%95%E0%A5%87%20%E0%A4%A6%E0%A5%87%E0%A4%96%20%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82%20%20%E0%A4%94%E0%A4%B0%20%20%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%AA%E0%A5%87%20%E0%A4%86%E0%A4%95%E0%A4%B0%20%E0%A4%B2%E0%A5%87%20%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82%20%7C%20&amp;url=https%3A%2F%2Fgarimafootwear.shopdekho.online%2Fview%23"  + userData.User_ID+"' > ";   
+  //showdata += '<span><i class="fa fa-telegram" style="font-size:17px;color:white;"></i>  </span> '; 
+  //showdata += '</a>'; 
+                  
+
+
+//var item = response.user[0]; // Assuming you want to use the first item in the 'user' array
+
+//var imageUrl = userData.first_pic; // Change this to the appropriate key containing the image URL
+
+// Construct the HTML code dynamically using the image URL
+//var showdata = "";
+showdata += " <a href='https://telegram.me/share/url?text=Best%20footwear%20for%20%20Home%20office%20School.%20%20%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%BE%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AF%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%20%E0%A4%9D%E0%A5%82%E0%A4%82%E0%A4%B8%E0%A5%80%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%B9%E0%A5%88%20%2C%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%95%E0%A5%80%20%E0%A4%AB%E0%A5%81%E0%A4%9F%E0%A4%B5%E0%A4%BF%E0%A4%AF%E0%A4%B0%20%E0%A4%A6%E0%A5%87%E0%A4%96%E0%A4%A8%E0%A5%87%20%E0%A4%95%E0%A5%87%20%E0%A4%B2%E0%A4%BF%E0%A4%8F%E0%A4%B5%E0%A5%87%E0%A4%AC%E0%A4%B8%E0%A4%BE%E0%A4%87%E0%A4%9F%20%E0%A4%AA%E0%A5%87%20%E0%A4%95%E0%A5%8D%E0%A4%B2%E0%A4%BF%E0%A4%95%20%E0%A4%95%E0%A4%B0%20%E0%A4%95%E0%A5%87%20%E0%A4%A6%E0%A5%87%E0%A4%96%E0%A4%A8%E0%A5%87%20%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82%20%20%E0%A4%94%E0%A4%B0%20%20%E0%A4%B9%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%B6%E0%A5%89%E0%A4%AA%20%E0%A4%AA%E0%A5%87%20%E0%A4%86%E0%A4%95%E0%A4%B0%20%E0%A4%B2%E0%A5%87%20%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82%20%7C%20&amp;url=https%3A%2F%2Fgarimafootwear.shopdekho.online%2Fview%23"  +userData.User_ID+" " +userData.first_pic+"'> ";   
+//showdata += '<img src="' + userData.first_pic + '" alt="Image" style="width: 100px; height: 100px;">'; // Modify the width, height as per your requirement
+showdata += '<span><i class="fa fa-telegram" style="font-size:17px;color:white;"></i>  </span> '; 
+showdata += '</a>';
+  
+                  
+                  
+                  
+                  
+                  
+                
+                  
+                  
+                  
+                  
+                  
+		 showdata += '</div>';// box1 End
+		 
+		 		
+		 
+		 
+		 
+		 
+		  showdata += '<div id="box2">';
+			 showdata += ' <div class="row"><h2 class="text-success">Price :  &nbsp; &nbsp;<i class="fa fa-inr" aria-hidden="true"></i> ' + userData.Price + '</h2></div>';
+			 showdata += ' <div class="row"><h3 class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 712 612" width="1em" height="1em"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 0C352.3 0 256 32 256 32V160c48 0 76 16 104 32s56 32 104 32c56.4 0 176-16 176-96S512 0 416 0zM128 96c0 35.3 28.7 64 64 64h32V32H192c-35.3 0-64 28.7-64 64zM288 512c96 0 224-48 224-128s-119.6-96-176-96c-48 0-76 16-104 32s-56 32-104 32V480s96.3 32 160 32zM0 416c0 35.3 28.7 64 64 64H96V352H64c-35.3 0-64 28.7-64 64z"/></svg></h3>&nbsp; &nbsp;<h5>Brand Name :   ' + userData.Brand_name + '</h5></div>';
+			 showdata += ' <div class="row"><p><i class="text-success fa fa-check-square-o" aria-hidden="true"></i> <strong>100%</strong> Good Quality</p></div>';
+			 showdata += ' <div class="row mt-4"><h3 class="text-info"><i class="fa fa-calendar" aria-hidden="true"></i></h3><p style="font-size: 20px"> &nbsp; List Date : | &nbsp; <span class="text-success">' + userData.DATE + '</span> </p></div>';
+			  showdata += '<div class="row mt-4"><h4> <i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp; Quantity : &nbsp; &nbsp;</h4><p style="font-size: 18px">' + userData.Quantity + ' </p></div>';
+		showdata += '</div>';// box2 End
+		
+		showdata += '<div id="box5">';
+		            showdata += '<h2 class="text-success"><i class="fa fa-paint-brush" style="font-size:25px;color:red"></i>&nbsp; Colour | &nbsp;' + userData.Colour + '</h2>';
+		        showdata += ' <div class="row mt-4"><h3 class="text-info"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 712 612" width="1em" height="1em"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 0C352.3 0 256 32 256 32V160c48 0 76 16 104 32s56 32 104 32c56.4 0 176-16 176-96S512 0 416 0zM128 96c0 35.3 28.7 64 64 64h32V32H192c-35.3 0-64 28.7-64 64zM288 512c96 0 224-48 224-128s-119.6-96-176-96c-48 0-76 16-104 32s-56 32-104 32V480s96.3 32 160 32zM0 416c0 35.3 28.7 64 64 64H96V352H64c-35.3 0-64 28.7-64 64z"/></svg></h3><p style="font-size: 20px"> &nbsp; Size : | &nbsp; <span class="text-success">' + userData.Size + '</span> </p></div>';
+			 
+		showdata += '</div>';
+		 
+		  showdata += '<div id="box3">';
+						 showdata += '<div class="row"><h2 class="contactmob">Contact to Owner!</h2></div>';
+					  showdata += '<div class="row"><h2 class="text-success"> Mobile No :&nbsp;<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp; +91 811 511 1457 <br></h2><h2 class="text-success"> :&nbsp;<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; +91 873 906 6514</h2></div>';
+					   
+		 showdata += '</div>';// box3 End
+		  showdata += '<div id="box4">';
+					   showdata += '<div class="row mt-4"> <h4>Name: &nbsp; &nbsp; <i class="fa fa-user-circle" aria-hidden="true"></i></h4> &nbsp;<p style="font-size: 18px">Prince Yadav </p></div>';
+		  showdata += '</div>';// box4 End
+    showdata += '</div>';// col-lg-4 End
+  
+ showdata += '</div>';// col-lg-4 End
+  showdata += '</div>';// col-lg-4 End
+                    userDataContainer.innerHTML = showdata; // Append user data to the container
+                } else {
+                    alert("Product ID Not found " + requestedUserId);
+                }
+				
+				
+				
+				
+	// code start for openpop image		
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+// Function to open popup with image
+function openPopup(imgSrc) {
+  let popupContainer = document.getElementById("popupContainer");
+  let popupImg = document.getElementById("popupImg");
+  popupImg.src = imgSrc;
+  popupContainer.style.display = "block";
+}
+
+// Function to close popup
+function closePopup() {
+  document.getElementById("popupContainer").style.display = "none";
+}
+
+// Add popup functionality to carousel images
+let carouselImages = document.querySelectorAll(".demop");
+carouselImages.forEach((image, index) => {
+  image.addEventListener("click", function() {
+    openPopup(this.src);
+  });
+});		// code End for openpop image	
+				
+				
+				}
+        };
+
+        // Open the HTTP request
+        xhttp.open("GET", "https://script.google.com/macros/s/AKfycbwSRB2xbTZ7X2jcqgEv7Y9Gwe5W2RZI2eDV4nbhtAR_rFOo7HD1CEOf3VTzNOYNG9mdNA/exec", true); // Use true for asynchronous
+
+        // Send the request
+        xhttp.send();
+    </script>
+
+
+
+
+<div class="container">
+   <div class="row mt-5"><h2 class="similarPdc">Other Products</h2></div>
+     <div class="row mt-5">
+<!--<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        console.log(xhttp.responseText);
+        var response = JSON.parse(xhttp.responseText);
+        console.log(response.user);
+        var user = response.user;
+        var showdata = "";
+
+        // Filter out objects with empty values for all properties
+        var filteredUser = user.filter(function(item) {
+            return Object.values(item).some(function(val) {
+                return val !== '';
+            });
+        });
+
+        // Determine the starting index for the loop
+        var start = Math.max(filteredUser.length - 4, 0);
+
+        // Loop through only the last 4 items with valid data
+        for (var i = filteredUser.length - 1; i >= start; i--) {
+            if (filteredUser[i].User_ID !== undefined && filteredUser[i].Brand_name !== '') {
+         showdata +='<div class="col-md-3">';
+   		 showdata +='<div class="card">';
+   			showdata +='<img class="card-img-top img-fluid" src="' + user[i].FILE1H + '">';
+   			 showdata +='<div class="card-title">';
+   				showdata +='<h4>' + user[i].NAME + '</h4>';
+   			showdata +='</div>';
+   			 showdata +='<div class="card-text">' + user[i].DATE + '<br/><br/>';
+              showdata += " <a href='view.html#" + user[i].User_ID + "' target=\"_blank\" class=\"btn btn-success text-light\"> View More ";
+              showdata += '</a> &nbsp; <br/><br/>';
+             showdata +='</div>';
+   		showdata +='</div>';
+ showdata +='</div>';
+ 
+
+            } else {
+                showdata += '<div class="col-md-3 biseller-column" style="display: none;"></div>';
+            }
+        }
+        document.write(showdata);
+    }
+};
+
+xhttp.open("GET", "https://script.google.com/macros/s/AKfycbwSRB2xbTZ7X2jcqgEv7Y9Gwe5W2RZI2eDV4nbhtAR_rFOo7HD1CEOf3VTzNOYNG9mdNA/exec", false);
+xhttp.send();
+</script>-->
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          var response = JSON.parse(xhttp.responseText);
+          var user = response.user;
+          var showdata = "";
+
+          var filteredUser = user.filter(function(item) {
+              return item.User_ID.trim() !== '';
+          });
+
+          var start = Math.max(filteredUser.length - 10, 0);
+
+          for (var i = filteredUser.length - 7; i >= start; i--) {
+              console.log("Processing item:", filteredUser[i]);
+              // Log values for debugging
+              console.log("DATE:", filteredUser[i].DATE);
+              console.log("NAME:", filteredUser[i].NAME);
+              console.log("Colour:", filteredUser[i].Colour);
+              console.log("Quantity:", filteredUser[i].Quantity);
+              if (filteredUser[i].User_ID.trim() !== '' && filteredUser[i].Brand_name.trim() !== '') {
+                showdata +='<div class="col-md-3">';
+   		 showdata +='<div class="card">';
+   			showdata +='<img class="card-img-top img-fluid" src="' + filteredUser[i].first_pic + '">';
+   			 showdata +='<div class="card-title">';
+   				showdata +='<h4><i class="fa fa-align-left" aria-hidden="true"></i>&nbsp;&nbsp;' + filteredUser[i].NAME + '</h4>';
+   			showdata +='</div>';
+   			 showdata +='<div class="card-text"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;&nbsp;' + filteredUser[i].DATE + '<br/><br/>';
+              showdata += " <a href='view.html#" + filteredUser[i].User_ID + "' target=\"_blank\" class=\"btn btn-success text-light\"> View More ";
+              showdata += '</a> &nbsp; <br/><br/>';
+             showdata +='</div>';
+   		showdata +='</div>';
+ showdata +='</div>';
+              } else {
+                  // If required fields are missing, hide the block
+                  showdata += '<div class="col-md-3 biseller-column" style="display: none;"></div>';
+              }
+          }
+
+          document.write(showdata);
+      }
+  };
+
+  xhttp.open("GET", "https://script.google.com/macros/s/AKfycbwSRB2xbTZ7X2jcqgEv7Y9Gwe5W2RZI2eDV4nbhtAR_rFOo7HD1CEOf3VTzNOYNG9mdNA/exec", false);
+  xhttp.send();
+</script>
+</div> 
+</div>
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+// Function to open popup with image
+function openPopup(imgSrc) {
+  let popupContainer = document.getElementById("popupContainer");
+  let popupImg = document.getElementById("popupImg");
+  popupImg.src = imgSrc;
+  popupContainer.style.display = "block";
+}
+
+// Function to close popup
+function closePopup() {
+  document.getElementById("popupContainer").style.display = "none";
+}
+
+// Add popup functionality to carousel images
+let carouselImages = document.querySelectorAll(".demop");
+carouselImages.forEach((image, index) => {
+  image.addEventListener("click", function() {
+    openPopup(this.src);
+  });
+});
+</script>
+
+<!--<div class="container mt-5 mb-5">
+	<div class="row">
+		<h2>Ratings & Reviews</h2>
+	</div>
+	
+	<div class="row mt-5 mb-5">
+		<div class="media">
+  <img class="mr-3" src="11.jpg" alt="Generic placeholder image">
+  <div class="media-body">
+    <h5 class="mt-0">Very nice product. <span class="text-warning"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </span></h5>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div>
+</div>
+	</div>
+	
+	<div class="row mb-5">
+    <div class="media"> <img class="mr-3" src="12.jpg" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-0">Best product best material.<span class="text-warning"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </span></h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">&copy; 2024 &nbsp;&nbsp;&nbsp;<a class="navbar-brand" href="https://shopname.shopdekho.online/">shopname<span>footwear.shopdekho.online</span></a></p> 
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">ContactUs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Privacy Policy</a></li>
+    </ul>
+  </footer>
+
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ --> 
+</body>
+</html>
