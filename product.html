@@ -470,7 +470,117 @@ h6{
   </style>
 	
 
+<style>
+input#nameFilterInput {
+    background: #F9F9F9;
+    margin-bottom: 8px;
+    padding: 4px;
+    list-style-type: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    box-shadow: 0 0 0.6em #ccc;
+    -webkit-box-shadow: 0 0 0.6em #ccc;
+    -o-box-shadow: 0 0 0.6em #ccc;
+    -moz-box-shadow: 0 0 0.6em #ccc;
+    /* cursor: pointer; */
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
 
+input#minPriceInput{
+    background: #F9F9F9;
+    margin-bottom: 8px;
+    padding: 4px;
+    list-style-type: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    box-shadow: 0 0 0.6em #ccc;
+    -webkit-box-shadow: 0 0 0.6em #ccc;
+    -o-box-shadow: 0 0 0.6em #ccc;
+    -moz-box-shadow: 0 0 0.6em #ccc;
+    /* cursor: pointer; */
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
+input#maxPriceInput{
+    background: #F9F9F9;
+    margin-bottom: 8px;
+    padding: 4px;
+    list-style-type: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    box-shadow: 0 0 0.6em #ccc;
+    -webkit-box-shadow: 0 0 0.6em #ccc;
+    -o-box-shadow: 0 0 0.6em #ccc;
+    -moz-box-shadow: 0 0 0.6em #ccc;
+    /* cursor: pointer; */
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
+input#colorFilterInput{
+    background: #F9F9F9;
+    margin-bottom: 8px;
+    padding: 4px;
+    list-style-type: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    box-shadow: 0 0 0.6em #ccc;
+    -webkit-box-shadow: 0 0 0.6em #ccc;
+    -o-box-shadow: 0 0 0.6em #ccc;
+    -moz-box-shadow: 0 0 0.6em #ccc;
+    /* cursor: pointer; */
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
+input#brandFilterInput{
+    background: #F9F9F9;
+    margin-bottom: 8px;
+    padding: 4px;
+    list-style-type: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    box-shadow: 0 0 0.6em #ccc;
+    -webkit-box-shadow: 0 0 0.6em #ccc;
+    -o-box-shadow: 0 0 0.6em #ccc;
+    -moz-box-shadow: 0 0 0.6em #ccc;
+    /* cursor: pointer; */
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
+select#sizeFilterInput{
+    background: #F9F9F9;
+    margin-bottom: 8px;
+    padding: 4px;
+    list-style-type: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    box-shadow: 0 0 0.6em #ccc;
+    -webkit-box-shadow: 0 0 0.6em #ccc;
+    -o-box-shadow: 0 0 0.6em #ccc;
+    -moz-box-shadow: 0 0 0.6em #ccc;
+    /* cursor: pointer; */
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
+</style>
 
 
 
@@ -884,6 +994,31 @@ xhttp.send();
 									<a class="gridview"><i class="glyphicon glyphicon-th"></i></a>
 									<a class="listview active"><i class="glyphicon glyphicon-th-list"></i></a>
 								</div>
+
+
+<input type="text" id="nameFilterInput" onkeyup="filterProducts()" placeholder="Filter by Name..">
+<input type="number" id="minPriceInput" oninput="filterProducts()" placeholder="Min Price">
+<input type="number" id="maxPriceInput" oninput="filterProducts()" placeholder="Max Price">
+<input type="text" id="colorFilterInput" onkeyup="filterProducts()" placeholder="Filter by Color..">
+<input type="text" id="brandFilterInput" onkeyup="filterProducts()" placeholder="Filter by Brand Name..">
+<select id="sizeFilterInput" onchange="filterProducts()">
+  <option value="">Filter by Size..</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+</select>
+
+<div id="productContainer">
+  <!-- Product items will be generated dynamically -->
+</div>
 								<!--<div class="sort">
 								   <div class="sort-by">
 										<label>Sort By : </label>
